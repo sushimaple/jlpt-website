@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.glass-strong {
+  background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+  backdrop-filter: blur(24px);
+  border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+}
