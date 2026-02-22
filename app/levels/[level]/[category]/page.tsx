@@ -59,12 +59,15 @@ export default async function LevelCategoryPage({
         </p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tests.map((test) => (
+          {tests.map((test, index) => (
             <a
               key={test._id.toString()}
-              href={`/${test._id.toString()}`}
+              href={`/levels/${levelParam}/${categoryParam}/${test._id.toString()}`}
               className="group block rounded-lg border p-6 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 bg-card hover:bg-accent text-card-foreground"
             >
+              <p className="text-xs font-medium text-muted-foreground mb-2 uppercase tracking-wide">
+                Test {index + 1}
+              </p>
               <h3 className="text-xl font-semibold group-hover:underline mb-1">
                 {test.title}
               </h3>

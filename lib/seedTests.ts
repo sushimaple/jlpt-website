@@ -10,7 +10,7 @@ export async function seedJLPTTests() {
       filter: {
         level: test.level,
         section: test.section,
-        title: test.title,
+        testNumber: test.testNumber,
       },
       update: {
         $set: test,
@@ -21,4 +21,3 @@ export async function seedJLPTTests() {
 
   await Test.bulkWrite(operations);
 }
-

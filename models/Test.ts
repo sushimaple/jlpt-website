@@ -14,7 +14,7 @@ export interface TestQuestion {
 export interface TestDocument extends Document {
   level: JLPTLevel;
   section: JLPTSection;
-  title: string;
+  testNumber: number;
   questions: TestQuestion[];
 }
 
@@ -32,8 +32,8 @@ const TestSchema = new Schema<TestDocument>(
       required: true,
       index: true,
     },
-    title: {
-      type: String,
+    testNumber: {
+      type: Number,
       required: true,
     },
     questions: [
@@ -62,9 +62,8 @@ const TestSchema = new Schema<TestDocument>(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 export const Test: Model<TestDocument> =
   mongoose.models.Test || mongoose.model<TestDocument>("Test", TestSchema);
-
