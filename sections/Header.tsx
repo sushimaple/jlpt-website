@@ -1,5 +1,6 @@
 "use client";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -16,14 +17,12 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(window.scrollY > 50);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.addEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
@@ -33,17 +32,14 @@ export default function Header() {
       }  z-50`}
     >
       <nav className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <a href="#">JLPT</a>
-        <div className="gap-1">
-          <div className="hidden md:flex items-center gap-5 px-2 py-1">
-            {links.map((link, key) => (
-              <a href={link.href} key={key}>
-                {link.label}
-              </a>
-            ))}
-          </div>
+        <Link href="/">Home</Link>
+        <div className="hidden md:flex items-center gap-5 px-2 py-1">
+          {links.map((link, key) => (
+            <a href={link.href} key={key}>
+              {link.label}
+            </a>
+          ))}
         </div>
-        <div className="hidden md:block"></div>
         <button
           className="md:hidden"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -55,14 +51,14 @@ export default function Header() {
         <div className="md:hidden">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {links.map((link, key) => (
-              <a
+              <Link
                 href={link.href}
                 key={key}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-lg py-2 border-amber-500 text-center"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
