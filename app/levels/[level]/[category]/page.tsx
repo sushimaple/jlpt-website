@@ -68,9 +68,6 @@ export default async function LevelCategoryPage({
               <p className="text-xs font-medium text-muted-foreground mb-2 uppercase tracking-wide">
                 Test {index + 1}
               </p>
-              <h3 className="text-xl font-semibold group-hover:underline mb-1">
-                {test.title}
-              </h3>
               <p className="text-sm text-muted-foreground mb-3">
                 {test.questions.length} questions
               </p>

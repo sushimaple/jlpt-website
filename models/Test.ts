@@ -5,6 +5,7 @@ export type JLPTLevel = "N5" | "N4" | "N3" | "N2" | "N1";
 export type JLPTSection = "vocabulary" | "grammar" | "reading" | "listening";
 
 export interface TestQuestion {
+  passage?: string;
   question: string;
   options: string[];
   correctIndex: number;
@@ -38,6 +39,9 @@ const TestSchema = new Schema<TestDocument>(
     },
     questions: [
       {
+        passage: {
+          type: String,
+        },
         question: {
           type: String,
           required: true,

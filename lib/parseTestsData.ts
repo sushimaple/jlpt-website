@@ -10,12 +10,15 @@ interface ParsedTest {
 }
 
 const LEVELS: JLPTLevel[] = ["N5", "N4", "N3", "N2", "N1"];
-const SECTIONS: Record<string, JLPTSection> = {
-  Vocabulary: "vocabulary",
-  Grammar: "grammar",
-  Reading: "reading",
-  Listening: "listening",
-};
+
+function mapSectionName(dirName: string): JLPTSection | null {
+  const key = dirName.trim().toLowerCase();
+  if (key.startsWith("vocab")) return "vocabulary";
+  if (key.startsWith("gram")) return "grammar";
+  if (key.startsWith("read")) return "reading";
+  if (key.startsWith("listen")) return "listening";
+  return null;
+}
 
 function parseTestFile(filePath: string): TestQuestion[] | null {
   try {
@@ -101,9 +104,8 @@ function parseTestFile(filePath: string): TestQuestion[] | null {
 
 function getTestNumber(filePath: string): number {
   const filename = path.basename(filePath);
-  // Extract number from filename like N5Vocabulary-1.txt or N5-Grammar-1.txt
-  const match = filename.match(/(\d+)\.(txt|TXT)$/);
-  return match ? parseInt(match[1]) : 1;
+  const nums = filename.match(/\d+/g);
+  return nums && nums.length > 0 ? parseInt(nums[nums.length - 1], 10) : 1;
 }
 
 function generateTests(): ParsedTest[] {
@@ -114,18 +116,18 @@ function generateTests(): ParsedTest[] {
     const levelDir = path.join(testsDir, level);
     if (!fs.existsSync(levelDir)) continue;
 
-    for (const section of Object.keys(SECTIONS)) {
-      const sectionDir = path.join(levelDir, section);
-      if (!fs.existsSync(sectionDir)) continue;
+    const entries = fs.readdirSync(levelDir, { withFileTypes: true });
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      const sectionName = entry.name;
+      const mapped = mapSectionName(sectionName);
+      if (!mapped) continue;
 
+      const sectionDir = path.join(levelDir, sectionName);
       const files = fs
         .readdirSync(sectionDir)
-        .filter((f) => f.endsWith(".txt"))
-        .sort((a, b) => {
-          const numA = parseInt(path.basename(a).match(/\d+/) || "0");
-          const numB = parseInt(path.basename(b).match(/\d+/) || "0");
-          return numA - numB;
-        });
+        .filter((f) => f.toLowerCase().endsWith(".txt"))
+        .sort((a, b) => getTestNumber(a) - getTestNumber(b));
 
       for (const file of files) {
         const filePath = path.join(sectionDir, file);
@@ -135,7 +137,7 @@ function generateTests(): ParsedTest[] {
           const testNumber = getTestNumber(file);
           tests.push({
             level,
-            section: SECTIONS[section],
+            section: mapped,
             testNumber,
             questions,
           });
@@ -146,7 +148,7 @@ function generateTests(): ParsedTest[] {
 
   return tests.sort((a, b) => {
     const levelOrder = { N5: 0, N4: 1, N3: 2, N2: 3, N1: 4 };
-    const sectionOrder = {
+    const sectionOrder: Record<JLPTSection, number> = {
       vocabulary: 0,
       grammar: 1,
       reading: 2,

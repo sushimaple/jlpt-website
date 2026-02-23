@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 
 interface TestQuestion {
+  passage?: string;
   question: string;
   options: string[];
   correctIndex: number;
@@ -67,9 +68,11 @@ export default function TestPage() {
   const percentage = Math.round((score / total) * 100);
 
   const handleAnswerChange = (qIndex: number, selected: number) => {
-    const newAnswers = [...userAnswers];
-    newAnswers[qIndex] = selected;
-    setUserAnswers(newAnswers);
+    setUserAnswers((prev) => {
+      const updated = [...prev];
+      updated[qIndex] = selected;
+      return updated;
+    });
   };
 
   const handleSubmit = () => {
@@ -78,7 +81,32 @@ export default function TestPage() {
 
   const handleRetry = () => {
     setSubmitted(false);
-    setUserAnswers(userAnswers.map(() => -1));
+    setUserAnswers((prev) => prev.map(() => -1));
+  };
+
+  const getOptionClassName = (selected: boolean, correct: boolean): string => {
+    const baseClass =
+      "flex items-center p-3 rounded-lg cursor-pointer hover:bg-muted transition-colors border";
+    if (submitted) {
+      if (selected && correct)
+        return (
+          baseClass +
+          " bg-green-100 border-green-300 text-green-900 font-medium"
+        );
+      if (selected && !correct)
+        return baseClass + " bg-red-100 border-red-300 text-red-900";
+      if (correct && !selected)
+        return (
+          baseClass + " bg-green-50 border-green-200 text-green-800 font-medium"
+        );
+      return baseClass + " bg-muted/30";
+    }
+    return (
+      baseClass +
+      (selected
+        ? " bg-primary/10 border-primary/30 text-primary font-medium"
+        : "")
+    );
   };
 
   return (
@@ -94,37 +122,25 @@ export default function TestPage() {
       <form className="space-y-6">
         {test.questions.map((q, index) => {
           const userSelected = userAnswers[index];
-          const isCorrect = q.correctIndex === userSelected;
-          const correctOpt = q.correctIndex;
           return (
             <div
               key={index}
               className="p-6 border rounded-lg space-y-4 bg-card"
             >
-              <div className="font-medium text-lg">{q.question}</div>
+              {q.passage && q.passage.trim() && (
+                <div className="bg-slate-50 dark:bg-slate-400 p-4 rounded border border-slate-200 dark:border-slate-700 whitespace-pre-wrap text-sm leading-relaxed mb-4">
+                  {q.passage}
+                </div>
+              )}
+              <div className="font-medium text-lg">
+                <span>{index + 1}. </span>
+                {q.question}
+              </div>
               <div className="space-y-3">
                 {q.options.map((option, optIndex) => {
                   const selected = userSelected === optIndex;
                   const correct = optIndex === q.correctIndex;
-                  let labelClass =
-                    "flex items-center p-3 rounded-lg cursor-pointer hover:bg-muted transition-colors border";
-                  if (submitted) {
-                    if (selected && correct) {
-                      labelClass +=
-                        " bg-green-100 border-green-300 text-green-900 font-medium";
-                    } else if (selected && !correct) {
-                      labelClass += " bg-red-100 border-red-300 text-red-900";
-                    } else if (correct && !selected) {
-                      labelClass +=
-                        " bg-green-50 border-green-200 text-green-800 font-medium";
-                    } else {
-                      labelClass += " bg-muted/30";
-                    }
-                  } else {
-                    labelClass += selected
-                      ? " bg-primary/10 border-primary/30 text-primary font-medium"
-                      : "";
-                  }
+                  const labelClass = getOptionClassName(selected, correct);
                   return (
                     <label key={optIndex} className={labelClass}>
                       <input

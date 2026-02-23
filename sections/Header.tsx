@@ -8,11 +8,11 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const links = [
-    { label: "N1", href: "#N1" },
-    { label: "N2", href: "#N2" },
-    { label: "N3", href: "#N3" },
-    { label: "N4", href: "#N4" },
-    { label: "N5", href: "#N5" },
+    { label: "N1", href: "/levels/n1/grammar" },
+    { label: "N2", href: "/levels/n2/grammar" },
+    { label: "N3", href: "/levels/n3/grammar" },
+    { label: "N4", href: "/levels/n4/grammar" },
+    { label: "N5", href: "/levels/n5/grammar" },
   ];
 
   useEffect(() => {
@@ -35,14 +35,14 @@ export default function Header() {
         <Link href="/">Home</Link>
         <div className="hidden md:flex items-center gap-5 px-2 py-1">
           {links.map((link, key) => (
-            <a href={link.href} key={key}>
+            <Link href={link.href} key={key}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
         <button
           className="md:hidden"
-          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
