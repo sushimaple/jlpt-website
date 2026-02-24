@@ -1,0 +1,13 @@
+N1 TEST 1 LISTENING CHOICES.
+QUESTION 1: 水の量を増やす, 水の量を減らす, ひりょうを増やす, ひりょうを減らす
+QUESTION 2: ゴミ袋を買う, 清掃用具を買う, お知らせの内容を書き足す, 役所にゴミ回収を依頼する
+QUESTION 3: パッケージのデザイン, クリームの種類, 一箱に入れるクッキーの量, 販売価格
+QUESTION 4: 一年間の契約をする, 二年間の契約をする, 携帯電話を買い換える, 手数料を払う
+QUESTION 5: 野菜を収穫する, 牛の世話をする, 食事の準備をする, 若手グループの話を聞く
+
+Answer Key:
+Question 1: 2
+Question 2: 3
+Question 3: 2
+Question 4: 2
+Question 5: 2

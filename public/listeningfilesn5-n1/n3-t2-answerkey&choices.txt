@@ -1,0 +1,13 @@
+N3 TEST 2 LISTENING CHOICES.
+QUESTION 1: 四時 ,四時半,五時,五時半
+QUESTION 2: サッカー, バスケット, テニス, 卓球
+QUESTION 3: おいしい料理を食べること, 子供と遊ぶこと ,写真をもらうこと ,日本の習慣を習うこと
+QUESTION 4: このグループの歌が好きだから。, 子供と遊ぶこと, 写真をもらうこと, 日本の習慣を習うこと
+QUESTION 5: 虫に食べられた傷があるから。, 薬を使ってしまうから。 ,味は普通のりんごほどよくないから , 台風で落ちてしまって、表面に傷があるから
+
+Answer Key:
+Question 1: 4
+Question 2: 4
+Question 3: 2
+Question 4: 2
+Question 5: 4

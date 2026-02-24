@@ -1,0 +1,13 @@
+N3 TEST 1 LISTENING CHOICES.
+QUESTION 1: 1, 2 ,3 ,4
+QUESTION 2: 400円, 500円 ,600円, 700円
+QUESTION 3: 帽子を送ります,ファックスをします, メールします, 写真を送ります
+QUESTION 4: ラジオを聞きます, 歌を歌います, ラジオ局に電話します, インターネットします
+QUESTION 5: 休みます, 会議に出ます, 田中さんに電話します, 書類の準備をします
+
+Answer Key:
+Question 1: 1
+Question 2: 3
+Question 3: 3
+Question 4: 4
+Question 5: 3
