@@ -42,7 +42,7 @@ export default async function LevelCategoryPage({
     categoryParam.charAt(0).toUpperCase() + categoryParam.slice(1);
 
   return (
-    <section className="space-y-6">
+    <section className="space-y-6 max-w-4xl mx-auto">
       <header className="space-y-2">
         <h2 className="text-3xl font-bold">
           JLPT {levelLabel} {sectionLabel} Tests
@@ -54,19 +54,19 @@ export default async function LevelCategoryPage({
 
       {tests.length === 0 ? (
         <p className="text-muted-foreground">
-          No tests found for this section yet. Run `npx tsx lib/seedTxtTests.ts`
-          after setting MONGODB_URI.
+          No tests found for this section yet. go to:
+          http://localhost:3000/api/seed to seed your database
         </p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tests.map((test, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+          {tests.map((test, i) => (
             <a
               key={test._id.toString()}
-              href={`/levels/${levelParam}/${categoryParam}/${test._id.toString()}`}
-              className="group block rounded-lg border p-6 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 bg-card hover:bg-accent text-card-foreground"
+              href={`/levels/${levelParam}/${categoryParam}/${test._id}`}
+              className="group block rounded-lg border p-6 shadow-lg hover:shadow-md transition-all hover:scale-105 bg-white hover:bg-accent"
             >
               <p className="text-xs font-medium text-muted-foreground mb-2 uppercase tracking-wide">
-                Test {index + 1}
+                Test {i + 1}
               </p>
               <p className="text-sm text-muted-foreground mb-3">
                 {test.questions.length} questions

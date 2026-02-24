@@ -7,27 +7,20 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const links = [
-    { label: "N1", href: "/levels/n1/grammar" },
-    { label: "N2", href: "/levels/n2/grammar" },
-    { label: "N3", href: "/levels/n3/grammar" },
-    { label: "N4", href: "/levels/n4/grammar" },
-    { label: "N5", href: "/levels/n5/grammar" },
-  ];
+  const levels = ["N1", "N2", "N3", "N4", "N5"];
+  const links = levels.map((level) => ({
+    label: level,
+    href: `/levels/${level.toLowerCase()}/grammar`,
+  }));
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <div
-      className={`fixed top-0 left-0 right-0 transition-all border border-amber-700 ${
+      className={`fixed top-0 left-0 right-0 transition-all ${
         isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
       }  z-50`}
     >
@@ -42,7 +35,7 @@ export default function Header() {
         </div>
         <button
           className="md:hidden"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => setIsMobileMenuOpen((open) => !open)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

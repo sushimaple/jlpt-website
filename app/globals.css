@@ -5,3 +5,7 @@
   backdrop-filter: blur(24px);
   border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
 }
+
+body {
+  background: #d2d4dc;
+}

@@ -4,29 +4,31 @@ import Link from "next/link";
 
 export default function Main() {
   const SECTIONS = [
-    "Grammar Test",
-    "Vocabulary Test",
-    "Listening Test",
-    "Reading Test",
+    { name: "Grammar", key: "grammar" },
+    { name: "Vocabulary", key: "vocabulary" },
+    { name: "Listening", key: "listening" },
+    { name: "Reading", key: "reading" },
   ] as const;
   const LEVELS = ["N5", "N4", "N3", "N2", "N1"] as const;
 
   return (
-    <div className="max-w-6xl mx-auto px-6 pt-16">
+    <div className="max-w-4xl mx-auto px-6 pt-16 ">
       {LEVELS.map((level) => (
-        <div key={level} className="mb-8">
-          <div className="bg-gray-700 text-white text-center py-4 text-2xl font-semibold mb-8">
+        <div
+          key={level}
+          className=" bg-[#3F4254] rounded-xl shadow-2xl overflow-hidden mb-8"
+        >
+          <h2 className="bg-gray-600 text-white text-center py-4 text-2xl  font-semibold">
             JLPT {level} RESOURCES
-          </div>
-
-          <div className="grid grid-cols-2 gap-8 mb-12">
-            {SECTIONS.map((item) => (
+          </h2>
+          <div className="grid grid-cols-2 gap-6 p-8">
+            {SECTIONS.map(({ name, key }) => (
               <Link
-                key={item}
-                href={`/levels/${level.toLowerCase()}/${item.toLowerCase().split(" ")[0]}`}
-                className="text-center py-4 text-orange-500 font-semibold hover:text-orange-600 transition"
+                key={key}
+                href={`/levels/${level.toLowerCase()}/${key}`}
+                className="text-center py-4 text-white font-semibold hover:text-orange-600 transition"
               >
-                {level} {item.toUpperCase()}
+                {level} {name.toUpperCase()}
               </Link>
             ))}
           </div>
