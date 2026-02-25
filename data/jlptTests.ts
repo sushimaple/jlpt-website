@@ -1626,6 +1626,291 @@ export const jlptTests: JLPTTestDefinition[] = [
   },
   {
     level: "N4",
+    section: "vocabulary",
+    testNumber: 6,
+    questions: [
+      {
+        question: "このみちをまっすぐいって、_______ を右にまがってください。",
+        options: ["はし", "かど", "みち", "とおり"],
+        correctIndex: 1,
+      },
+      {
+        question: "きょうは _______ がつよいので、せんたくものを外にほさないでください。",
+        options: ["あめ", "かぜ", "ゆき", "くも"],
+        correctIndex: 1,
+      },
+      {
+        question: "しけんに _______ ために、まいにちべんきょうしています。",
+        options: ["とおる", "うかる", "すすむ", "のぼる"],
+        correctIndex: 1,
+      },
+      {
+        question: "このりょうりは _______ がたりません。もうすこしいれましょう。",
+        options: ["しお", "さとう", "こしょう", "みそ"],
+        correctIndex: 0,
+      },
+      {
+        question: "でんわばんごうを _______ にメモしておきました。",
+        options: ["ノート", "カード", "チケット", "きっぷ"],
+        correctIndex: 0,
+      },
+      {
+        question: "やまださんは _______ がはやいので、いつもじかんどおりに来ます。",
+        options: ["あるく", "おきる", "ねる", "おわる"],
+        correctIndex: 1,
+      },
+      {
+        question: "このくつは _______ すぎて、あるくとつかれます。",
+        options: ["かるく", "おもく", "ひくく", "たかく"],
+        correctIndex: 1,
+      },
+      {
+        question: "かいしゃまで _______ でどのくらいかかりますか。",
+        options: ["あるき", "あるく", "あるいて", "あるいた"],
+        correctIndex: 2,
+      },
+      {
+        question: "あの _______ のうしろにバスていがあります。",
+        options: ["みせ", "たてもの", "はし", "とおり"],
+        correctIndex: 1,
+      },
+      {
+        question: "まいあさ _______ をのみながらしんぶんをよみます。",
+        options: ["ごはん", "みず", "コーヒー", "パン"],
+        correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "vocabulary",
+    testNumber: 7,
+    questions: [
+      {
+        question: "えきの _______ でともだちをまっていました。",
+        options: ["いりぐち", "でぐち", "ひこうき", "ちかてつ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はとてもきれいなうみがみえます。",
+        options: ["まど", "かべ", "いす", "つくえ"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ にのって、きょうとへいきました。",
+        options: ["タクシー", "バス", "でんしゃ", "ひこうき"],
+        correctIndex: 2,
+      },
+      {
+        question: "しゅうまつは _______ でゆっくりやすみます。",
+        options: ["うち", "がいこく", "りょこう", "かいしゃ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はあまくておいしいです。",
+        options: ["くだもの", "やさい", "にく", "パン"],
+        correctIndex: 0,
+      },
+      {
+        question: "でんきを _______ ままねてしまいました。",
+        options: ["つけて", "けして", "あけて", "しめて"],
+        correctIndex: 0,
+      },
+      {
+        question: "あの _______ はいつもこんでいます。",
+        options: ["みせ", "とおり", "まち", "えき"],
+        correctIndex: 1,
+      },
+      {
+        question: "_______ をわすれないでください。",
+        options: ["きっぷ", "おかね", "かばん", "でんわ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はあたらしいので、とてもきれいです。",
+        options: ["アパート", "うち", "へや", "まち"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ がなったので、でんわに出ました。",
+        options: ["ドア", "ベル", "まど", "でんき"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "vocabulary",
+    testNumber: 8,
+    questions: [
+      {
+        question: "かいものに _______ いきました。",
+        options: ["あるいて", "はしって", "のって", "とんで"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はなんとよみますか。",
+        options: ["かんじ", "ひらがな", "かたかな", "えいご"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ がさむいので、コートをきています。",
+        options: ["きょう", "あした", "きのう", "まいにち"],
+        correctIndex: 0,
+      },
+      {
+        question: "しょくじの _______ にてをあらいましょう。",
+        options: ["まえ", "あと", "あいだ", "なか"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ のよるはねむれませんでした。",
+        options: ["うるさい", "しずか", "きれい", "にぎやか"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はちょっとむずかしいです。",
+        options: ["もんだい", "こたえ", "しつもん", "れい"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ をきいて、びっくりしました。",
+        options: ["はなし", "おと", "こえ", "おんがく"],
+        correctIndex: 0,
+      },
+      {
+        question: "にほんごの _______ をならっています。",
+        options: ["ぶんぽう", "れきし", "すうがく", "りか"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ がおおきいので、にもつがたくさんはこべます。",
+        options: ["くるま", "じてんしゃ", "バス", "でんしゃ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はどこのくにでつくられましたか。",
+        options: ["くつ", "とけい", "かばん", "めがね"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "vocabulary",
+    testNumber: 9,
+    questions: [
+      {
+        question: "_______ にじゅぎょうがあります。",
+        options: ["きょうしつ", "としょかん", "じむしょ", "うけつけ"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ をひらいて、本をよみます。",
+        options: ["まど", "とびら", "でんき", "ほんだな"],
+        correctIndex: 1,
+      },
+      {
+        question: "この _______ はあついので、きをつけてください。",
+        options: ["みず", "おちゃ", "スープ", "コーヒー"],
+        correctIndex: 2,
+      },
+      {
+        question: "_______ がおわったら、れんしゅうをはじめます。",
+        options: ["やすみ", "しゅくだい", "じゅぎょう", "しけん"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ にでんわばんごうをかきました。",
+        options: ["てがみ", "はがき", "ちず", "メモ"],
+        correctIndex: 3,
+      },
+      {
+        question: "_______ がとおいので、バスでいきます。",
+        options: ["みせ", "がっこう", "えき", "びょういん"],
+        correctIndex: 2,
+      },
+      {
+        question: "この _______ はやすいですが、じょうぶです。",
+        options: ["カメラ", "パソコン", "かばん", "とけい"],
+        correctIndex: 2,
+      },
+      {
+        question: "_______ をわすれたので、かえりました。",
+        options: ["さいふ", "かぎ", "めがね", "ぼうし"],
+        correctIndex: 1,
+      },
+      {
+        question: "_______ がふって、かさがひつようです。",
+        options: ["ゆき", "あめ", "くもり", "かぜ"],
+        correctIndex: 1,
+      },
+      {
+        question: "_______ のしたにねこがいます。",
+        options: ["いす", "つくえ", "ベッド", "ソファ"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "vocabulary",
+    testNumber: 10,
+    questions: [
+      {
+        question: "この _______ はにほんごでなんといいますか。",
+        options: ["もの", "こと", "ひと", "ところ"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ にえいがをみにいきます。",
+        options: ["いつ", "どこ", "だれ", "なに"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ がすきなスポーツはなんですか。",
+        options: ["あなた", "わたし", "かれ", "かのじょ"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ のいちにちはなんですか。",
+        options: ["きょう", "たのしい", "いそがしい", "ひま"],
+        correctIndex: 2,
+      },
+      {
+        question: "_______ をのんで、びょうきをなおしました。",
+        options: ["くすり", "みず", "ごはん", "くだもの"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ がきれいなので、さんぽにいきました。",
+        options: ["てんき", "きおん", "きせつ", "しつど"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ にほんごをべんきょうしています。",
+        options: ["まいにち", "まいしゅう", "まいつき", "まいとし"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はいくらですか。",
+        options: ["しなもの", "みせ", "ねだん", "かいもの"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ がおおいので、バスでいきます。",
+        options: ["ひと", "くるま", "みち", "まち"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ をみて、えきまでのいきかたをしりました。",
+        options: ["ちず", "しんぶん", "ざっし", "ほん"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N4",
     section: "grammar",
     testNumber: 1,
     questions: [
@@ -1984,6 +2269,291 @@ export const jlptTests: JLPTTestDefinition[] = [
           "一人　_______ 子供のいない両親はあまり仲が良くないっていうのは本当だと思う？",
         options: ["もう", "しか", "だけ", "ばかり"],
         correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "grammar",
+    testNumber: 6,
+    questions: [
+      {
+        question: "このレストランは _______ おいしいです。",
+        options: ["とても", "あまり", "ほとんど", "なかなか"],
+        correctIndex: 0,
+      },
+      {
+        question: "でんしゃが _______ ので、いそがなくてもいいです。",
+        options: ["おそい", "おくれる", "おくれた", "おくれている"],
+        correctIndex: 1,
+      },
+      {
+        question: "あした _______ なら、えいがをみにいきませんか。",
+        options: ["ひま", "ひまな", "ひまだ", "ひまで"],
+        correctIndex: 1,
+      },
+      {
+        question: "この本は _______ 読むほどおもしろくなります。",
+        options: ["読む", "読んだ", "読んで", "読めば"],
+        correctIndex: 0,
+      },
+      {
+        question: "かれは _______ しずかで、いい人です。",
+        options: ["いつも", "いつでも", "いつか", "いつ"],
+        correctIndex: 0,
+      },
+      {
+        question: "にほんごが _______ 話せます。",
+        options: ["じょうずに", "じょうずで", "じょうず", "じょうずな"],
+        correctIndex: 0,
+      },
+      {
+        question: "あの _______ はだれですか。",
+        options: ["人", "人を", "人が", "人に"],
+        correctIndex: 0,
+      },
+      {
+        question: "きのう _______ で、きょうはねつがあります。",
+        options: ["かぜをひいた", "かぜをひいて", "かぜをひく", "かぜをひき"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はいくらですか。",
+        options: ["りんご", "りんごと", "りんごが", "りんごを"],
+        correctIndex: 0,
+      },
+      {
+        question: "まいにち _______ をききます。",
+        options: ["おんがく", "おんがくが", "おんがくを", "おんがくに"],
+        correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "grammar",
+    testNumber: 7,
+    questions: [
+      {
+        question: "ともだちが _______ ので、いっしょにべんきょうしました。",
+        options: ["来た", "来て", "来る", "来たの"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はあたらしいです。",
+        options: ["パソコン", "パソコンが", "パソコンを", "パソコンに"],
+        correctIndex: 0,
+      },
+      {
+        question: "あした _______ まえに、れんしゅうしておいてください。",
+        options: ["しけん", "しけんの", "しけんだ", "しけんで"],
+        correctIndex: 1,
+      },
+      {
+        question: "やまださんは _______ がたかいです。",
+        options: ["からだ", "せ", "あたま", "て"],
+        correctIndex: 1,
+      },
+      {
+        question: "この _______ はとてもむずかしいです。",
+        options: ["もんだい", "もんだいが", "もんだいを", "もんだいに"],
+        correctIndex: 0,
+      },
+      {
+        question: "でんわ _______ ばんごうをおしえてください。",
+        options: ["の", "が", "を", "に"],
+        correctIndex: 0,
+      },
+      {
+        question: "にほん _______ りょうりがすきです。",
+        options: ["の", "が", "を", "に"],
+        correctIndex: 0,
+      },
+      {
+        question: "あの _______ はなんといいますか。",
+        options: ["え", "えを", "えが", "えに"],
+        correctIndex: 0,
+      },
+      {
+        question: "まいあさ _______ をのみます。",
+        options: ["ミルク", "ミルクが", "ミルクを", "ミルクに"],
+        correctIndex: 2,
+      },
+      {
+        question: "きょうは _______ がつよいです。",
+        options: ["おてんき", "かぜ", "あめ", "ゆき"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "grammar",
+    testNumber: 8,
+    questions: [
+      {
+        question: "この _______ はどこでかったんですか。",
+        options: ["とけい", "とけいが", "とけいを", "とけいに"],
+        correctIndex: 0,
+      },
+      {
+        question: "にほんごの _______ をべんきょうしています。",
+        options: ["ぶんぽう", "ぶんぽうが", "ぶんぽうを", "ぶんぽうに"],
+        correctIndex: 0,
+      },
+      {
+        question: "あの _______ はだれのほんですか。",
+        options: ["つくえ", "つくえのうえ", "つくえのした", "つくえのまえ"],
+        correctIndex: 0,
+      },
+      {
+        question: "まいにち _______ にいきます。",
+        options: ["がっこう", "がっこうへ", "がっこうを", "がっこうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この _______ はおいしいです。",
+        options: ["ケーキ", "ケーキが", "ケーキを", "ケーキに"],
+        correctIndex: 0,
+      },
+      {
+        question: "でんしゃ _______ のっています。",
+        options: ["で", "に", "を", "が"],
+        correctIndex: 1,
+      },
+      {
+        question: "あした _______ がはじまります。",
+        options: ["しけん", "しけんの", "しけんだ", "しけんで"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はいくらですか。",
+        options: ["ほん", "ほんが", "ほんを", "ほんに"],
+        correctIndex: 0,
+      },
+      {
+        question: "にちようび _______ なにをしますか。",
+        options: ["は", "が", "を", "に"],
+        correctIndex: 0,
+      },
+      {
+        question: "あの _______ はなんですか。",
+        options: ["たてもの", "たてものが", "たてものを", "たてものに"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "grammar",
+    testNumber: 9,
+    questions: [
+      {
+        question: "きのう _______ をみました。",
+        options: ["えいが", "えいがが", "えいがを", "えいがに"],
+        correctIndex: 2,
+      },
+      {
+        question: "まいしゅう _______ にテニスをします。",
+        options: ["にど", "にども", "にどは", "にどが"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はだれのですか。",
+        options: ["かばん", "かばんが", "かばんを", "かばんに"],
+        correctIndex: 0,
+      },
+      {
+        question: "にほん _______ いつきましたか。",
+        options: ["へ", "に", "で", "を"],
+        correctIndex: 1,
+      },
+      {
+        question: "あの _______ はわたしのともだちです。",
+        options: ["ひと", "ひとが", "ひとを", "ひとに"],
+        correctIndex: 0,
+      },
+      {
+        question: "きょう _______ はあついです。",
+        options: ["のてんき", "てんき", "てんきが", "てんきを"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はにほんごでなんといいますか。",
+        options: ["もの", "ものが", "ものを", "ものに"],
+        correctIndex: 0,
+      },
+      {
+        question: "まいあさ _______ をおきて、あさごはんをたべます。",
+        options: ["しちじ", "しちじに", "しちじで", "しちじが"],
+        correctIndex: 1,
+      },
+      {
+        question: "あの _______ はなんのえですか。",
+        options: ["え", "えが", "えを", "えに"],
+        correctIndex: 0,
+      },
+      {
+        question: "にほんご _______ がむずかしいです。",
+        options: ["の", "が", "を", "に"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "grammar",
+    testNumber: 10,
+    questions: [
+      {
+        question: "この _______ はどこでならいましたか。",
+        options: ["うた", "うたが", "うたを", "うたに"],
+        correctIndex: 0,
+      },
+      {
+        question: "あした _______ がふるかもしれません。",
+        options: ["あめ", "あめが", "あめを", "あめに"],
+        correctIndex: 0,
+      },
+      {
+        question: "にほん _______ りょうりがたべたいです。",
+        options: ["の", "が", "を", "に"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はとてもおいしいです。",
+        options: ["りょうり", "りょうりが", "りょうりを", "りょうりに"],
+        correctIndex: 0,
+      },
+      {
+        question: "まいにち _______ をよみます。",
+        options: ["しんぶん", "しんぶんが", "しんぶんを", "しんぶんに"],
+        correctIndex: 2,
+      },
+      {
+        question: "あの _______ はなんさいですか。",
+        options: ["こども", "こどもが", "こどもを", "こどもに"],
+        correctIndex: 0,
+      },
+      {
+        question: "きょう _______ はさむいです。",
+        options: ["のてんき", "てんき", "てんきが", "てんきを"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はだれがかきましたか。",
+        options: ["え", "えが", "えを", "えに"],
+        correctIndex: 0,
+      },
+      {
+        question: "にほんご _______ べんきょうしています。",
+        options: ["の", "が", "を", "に"],
+        correctIndex: 2,
+      },
+      {
+        question: "あの _______ はなんといいますか。",
+        options: ["どうぶつ", "どうぶつが", "どうぶつを", "どうぶつに"],
+        correctIndex: 0,
       },
     ],
   },
@@ -2389,6 +2959,291 @@ export const jlptTests: JLPTTestDefinition[] = [
   },
   {
     level: "N3",
+    section: "vocabulary",
+    testNumber: 6,
+    questions: [
+      {
+        question: "会議の _______ をまとめて、全員に配布した。",
+        options: ["内容", "内側", "内部", "内面"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ な態度に、周りは困っている。",
+        options: ["乱暴", "丁寧", "親切", "真面目"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は明日までに提出してください。",
+        options: ["報告", "報酬", "返事", "回答"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ の結果、プロジェクトは成功した。",
+        options: ["協力", "努力", "能力", "威力"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が広く、いろいろなことを知っている。",
+        options: ["知識", "意識", "常識", "認識"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題は _______ が複雑だ。",
+        options: ["状況", "状態", "場合", "様子"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を守って、安全に運転してください。",
+        options: ["規則", "規律", "紀律", "規格"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ はいつも的確だ。",
+        options: ["判断", "判定", "批判", "裁判"],
+        correctIndex: 0,
+      },
+      {
+        question: "会議で _______ な意見が出た。",
+        options: ["貴重", "重大", "重要", "重大"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は来週から始まります。",
+        options: ["計画", "計算", "企画", "設計"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "vocabulary",
+    testNumber: 7,
+    questions: [
+      {
+        question: "彼は _______ に優れた人だ。",
+        options: ["才能", "材料", "資源", "財産"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ のため、電車が遅れています。",
+        options: ["事故", "事態", "事件", "事情"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ はとても役に立つ。",
+        options: ["情報", "消息", "連絡", "通信"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ をよく聞いてから決めてください。",
+        options: ["説明", "解釈", "解説", "注釈"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は立派だ。",
+        options: ["行動", "行為", "活動", "行動"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は難しい。",
+        options: ["課題", "問題", "主題", "話題"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を大切にしてください。",
+        options: ["時間", "時刻", "時期", "時代"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が高い。",
+        options: ["技術", "技能", "技芸", "技量"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は重要だ。",
+        options: ["点", "所", "箇所", "部分"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ に注意してください。",
+        options: ["健康", "健全", "健在", "健やか"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "vocabulary",
+    testNumber: 8,
+    questions: [
+      {
+        question: "彼の _______ は素晴らしい。",
+        options: ["成績", "成果", "成功", "成就"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は複雑だ。",
+        options: ["関係", "関連", "関心", "関与"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を確認してください。",
+        options: ["予定", "予約", "予想", "予測"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が深い。",
+        options: ["経験", "経過", "経歴", "経由"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は適切だ。",
+        options: ["方法", "方式", "手段", "手法"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を尊重してください。",
+        options: ["意見", "意味", "意志", "意図"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は正しい。",
+        options: ["考え", "考え方", "思考", "思想"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は明確だ。",
+        options: ["目的", "目標", "目安", "目印"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を守ってください。",
+        options: ["約束", "契約", "協定", "規定"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が豊かだ。",
+        options: ["表現", "表示", "表明", "表記"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "vocabulary",
+    testNumber: 9,
+    questions: [
+      {
+        question: "この _______ は効果的だ。",
+        options: ["対策", "対応", "対処", "対抗"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["分析", "分解", "分類", "分配"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を向上させてください。",
+        options: ["能力", "可能", "可能性", "可能"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は妥当だ。",
+        options: ["結論", "決論", "結末", "決着"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が優れている。",
+        options: ["理解力", "理解", "了解", "了承"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を深めてください。",
+        options: ["交流", "交際", "交渉", "交換"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は妥当だ。",
+        options: ["判断", "判定", "批判", "批評"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は立派だ。",
+        options: ["人格", "人物", "人柄", "人性"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を高めてください。",
+        options: ["品質", "品質", "品格", "品位"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は重要だ。",
+        options: ["要素", "要因", "要点", "要領"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "vocabulary",
+    testNumber: 10,
+    questions: [
+      {
+        question: "彼は _______ に富んでいる。",
+        options: ["創造力", "創造", "創意", "創設"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は適切だ。",
+        options: ["評価", "評判", "批評", "評論"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を大切にしてください。",
+        options: ["信頼", "信用", "信念", "信仰"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は素晴らしい。",
+        options: ["実績", "実力", "実現", "実践"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は効果的だ。",
+        options: ["改善", "改修", "改正", "改革"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を広げてください。",
+        options: ["視野", "視点", "視力", "視界"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が鋭い。",
+        options: ["観察力", "観察", "観測", "観点"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は明確だ。",
+        options: ["方針", "方向", "方法", "方式"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を重ねてください。",
+        options: ["努力", "労力", "尽力", "勢力"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["指摘", "指示", "指名", "指導"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N3",
     section: "grammar",
     testNumber: 1,
     questions: [
@@ -2732,6 +3587,291 @@ export const jlptTests: JLPTTestDefinition[] = [
     ],
   },
   {
+    level: "N3",
+    section: "grammar",
+    testNumber: 6,
+    questions: [
+      {
+        question: "この仕事は経験 _______ やったほうがいい。",
+        options: ["があると", "があれば", "があるなら", "があるから"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は約束 _______ 来なかった。",
+        options: ["をしたのに", "したのに", "のに", "をのに"],
+        correctIndex: 1,
+      },
+      {
+        question: "雨 _______ 試合は中止になった。",
+        options: ["なので", "のため", "だから", "なのでに"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女は泣き _______ 話した。",
+        options: ["ながら", "ながらに", "つつ", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "この本は読む _______ おもしろい。",
+        options: ["と", "ば", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ 言えば、みんな納得する。",
+        options: ["が", "は", "なら", "では"],
+        correctIndex: 2,
+      },
+      {
+        question: "会議は来週 _______ 延期された。",
+        options: ["に", "まで", "までに", "から"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼の話 _______ 、彼は成功したそうだ。",
+        options: ["によると", "によって", "について", "に対して"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題は難し _______ 、時間がかかる。",
+        options: ["くて", "いので", "いから", "くてに"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は医者 _______ 働いている。",
+        options: ["として", "にとって", "に対して", "について"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "grammar",
+    testNumber: 7,
+    questions: [
+      {
+        question: "彼女は歌 _______ 踊りも上手だ。",
+        options: ["だけでなく", "ばかりでなく", "のみならず", "しかない"],
+        correctIndex: 0,
+      },
+      {
+        question: "この薬を飲め _______ 治る。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ 誰も知らない。",
+        options: ["以外", "以外に", "以外は", "以外の"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ どう思いますか。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "grammar",
+    testNumber: 8,
+    questions: [
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ 考えている。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ 考えている。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "grammar",
+    testNumber: 9,
+    questions: [
+      {
+        question: "彼女は歌 _______ 踊りも上手だ。",
+        options: ["だけでなく", "ばかりでなく", "のみならず", "しかない"],
+        correctIndex: 2,
+      },
+      {
+        question: "この薬を飲め _______ 治る。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼 _______ 誰も知らない。",
+        options: ["以外", "以外に", "以外は", "以外の"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題 _______ どう思いますか。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 3,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 2,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "grammar",
+    testNumber: 10,
+    questions: [
+      {
+        question: "彼は医者 _______ 働いている。",
+        options: ["として", "にとって", "に対して", "について"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女は泣き _______ 話した。",
+        options: ["ながら", "ながらに", "つつ", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "この本は読む _______ おもしろい。",
+        options: ["と", "ば", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ 言えば、みんな納得する。",
+        options: ["が", "は", "なら", "では"],
+        correctIndex: 2,
+      },
+      {
+        question: "会議は来週 _______ 延期された。",
+        options: ["に", "まで", "までに", "から"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼の話 _______ 、彼は成功したそうだ。",
+        options: ["によると", "によって", "について", "に対して"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題は難し _______ 、時間がかかる。",
+        options: ["くて", "いので", "いから", "くてに"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は約束 _______ 来なかった。",
+        options: ["をしたのに", "したのに", "のに", "をのに"],
+        correctIndex: 1,
+      },
+      {
+        question: "雨 _______ 試合は中止になった。",
+        options: ["なので", "のため", "だから", "なのでに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この仕事は経験 _______ やったほうがいい。",
+        options: ["があると", "があれば", "があるなら", "があるから"],
+        correctIndex: 2,
+      },
+    ],
+  },
+  {
     level: "N2",
     section: "vocabulary",
     testNumber: 1,
@@ -3052,6 +4192,291 @@ export const jlptTests: JLPTTestDefinition[] = [
         question: "食べたら歯をみがく習慣を _______ ものだ。",
         options: ["もらいたい", "とりたい", "つけたい", "したい"],
         correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "vocabulary",
+    testNumber: 6,
+    questions: [
+      {
+        question: "彼の _______ な態度に、みんなが感動した。",
+        options: ["真剣", "深刻", "慎重", "親切"],
+        correctIndex: 0,
+      },
+      {
+        question: "会議で _______ な意見が交わされた。",
+        options: ["活発", "活気", "活動", "活躍"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は非常に複雑だ。",
+        options: ["制度", "制定", "制限", "制御"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ に優れている。",
+        options: ["交渉力", "交際", "交流", "交差"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を慎重に検討する。",
+        options: ["方策", "方法", "方針", "方向"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だった。",
+        options: ["指摘", "指示", "指名", "指導"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は効果的だ。",
+        options: ["措置", "処置", "処分", "処理"],
+        correctIndex: 1,
+      },
+      {
+        question: "_______ を重んじる文化だ。",
+        options: ["和諧", "調和", "協調", "融和"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は _______ が高い。",
+        options: ["洞察力", "洞察", "洞窟", "洞察的"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は画期的だ。",
+        options: ["改革", "改修", "改正", "改善"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "vocabulary",
+    testNumber: 7,
+    questions: [
+      {
+        question: "_______ を欠いた判断だった。",
+        options: ["公平", "公正", "公表", "公開"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は注目に値する。",
+        options: ["業績", "業務", "業界", "業種"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ な対応が求められる。",
+        options: ["柔軟", "柔和", "柔道", "柔らか"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は妥当だ。",
+        options: ["見解", "見方", "見地", "見当"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を図ることが重要だ。",
+        options: ["効率化", "効力", "効果", "効用"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ に長けている。",
+        options: ["説得", "説明", "解釈", "解説"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は革新的だ。",
+        options: ["手法", "手段", "手順", "手続"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を尊重する。",
+        options: ["多様性", "多量", "多数", "多岐"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は鋭い。",
+        options: ["観察", "観測", "観点", "観光"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は実現可能だ。",
+        options: ["計画", "計算", "企画", "設計"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "vocabulary",
+    testNumber: 8,
+    questions: [
+      {
+        question: "_______ を凝らして検討した。",
+        options: ["知恵", "知識", "知見", "知性"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["分析", "分解", "分類", "分配"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は不可欠だ。",
+        options: ["要素", "要因", "要点", "要領"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を深める。",
+        options: ["理解", "了解", "了承", "了見"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が豊かだ。",
+        options: ["経験", "経過", "経歴", "経由"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は適切だ。",
+        options: ["評価", "評判", "批評", "評論"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を欠かさない。",
+        options: ["努力", "労力", "尽力", "勢力"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は立派だ。",
+        options: ["人格", "人物", "人柄", "人性"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は明確だ。",
+        options: ["目的", "目標", "目安", "目印"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を守る。",
+        options: ["原則", "原理", "原意", "原本"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "vocabulary",
+    testNumber: 9,
+    questions: [
+      {
+        question: "彼の _______ は素晴らしい。",
+        options: ["実績", "実力", "実現", "実践"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は複雑だ。",
+        options: ["状況", "状態", "場合", "様子"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を重視する。",
+        options: ["品質", "品格", "品位", "品目"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が鋭い。",
+        options: ["直感", "直観", "直接", "直線"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は効果的だ。",
+        options: ["対策", "対応", "対処", "対抗"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を高める。",
+        options: ["生産性", "生活", "生命", "生計"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["判断", "判定", "批判", "批評"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は重要だ。",
+        options: ["観点", "観察", "観測", "観光"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を重ねる。",
+        options: ["改善", "改修", "改正", "改革"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ に富んでいる。",
+        options: ["創意", "創設", "創造", "創出"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "vocabulary",
+    testNumber: 10,
+    questions: [
+      {
+        question: "この _______ は妥当だ。",
+        options: ["結論", "決論", "結末", "決着"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は優れている。",
+        options: ["交渉力", "交際", "交流", "交差"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を欠いた対応だった。",
+        options: ["透明性", "透過", "透視", "透明"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が深い。",
+        options: ["見識", "見解", "見方", "見当"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は画期的だ。",
+        options: ["試み", "試行", "試練", "試作"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を尊重する。",
+        options: ["自主性", "自由", "自発", "自然"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["助言", "助力", "助成", "助長"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は不可欠だ。",
+        options: ["協力", "協調", "協定", "協会"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を図る。",
+        options: ["最適化", "最大", "最小", "最終"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が高い。",
+        options: ["適応力", "適正", "適切", "適当"],
+        correctIndex: 0,
       },
     ],
   },
@@ -3432,6 +4857,291 @@ export const jlptTests: JLPTTestDefinition[] = [
     ],
   },
   {
+    level: "N2",
+    section: "grammar",
+    testNumber: 6,
+    questions: [
+      {
+        question: "彼は約束 _______ 必ず守る人だ。",
+        options: ["をしたら", "したら", "すると", "をすると"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題は、彼 _______ 解けない。",
+        options: ["にとって", "に対して", "について", "によって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女は泣き _______ 話し始めた。",
+        options: ["ながら", "ながらに", "つつ", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "会議は来週 _______ 延期された。",
+        options: ["に", "まで", "までに", "から"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼の話 _______ 、彼は成功したそうだ。",
+        options: ["によると", "によって", "について", "に対して"],
+        correctIndex: 0,
+      },
+      {
+        question: "この仕事は経験 _______ やったほうがいい。",
+        options: ["があると", "があれば", "があるなら", "があるから"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は約束 _______ 来なかった。",
+        options: ["をしたのに", "したのに", "のに", "をのに"],
+        correctIndex: 1,
+      },
+      {
+        question: "雨 _______ 試合は中止になった。",
+        options: ["なので", "のため", "だから", "なのでに"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女は泣き _______ 話した。",
+        options: ["ながら", "ながらに", "つつ", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "この本は読む _______ おもしろい。",
+        options: ["と", "ば", "たら", "なら"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "grammar",
+    testNumber: 7,
+    questions: [
+      {
+        question: "彼 _______ 言えば、みんな納得する。",
+        options: ["が", "は", "なら", "では"],
+        correctIndex: 2,
+      },
+      {
+        question: "会議は来週 _______ 延期された。",
+        options: ["に", "まで", "までに", "から"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼の話 _______ 、彼は成功したそうだ。",
+        options: ["によると", "によって", "について", "に対して"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題は難し _______ 、時間がかかる。",
+        options: ["くて", "いので", "いから", "くてに"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は医者 _______ 働いている。",
+        options: ["として", "にとって", "に対して", "について"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女は歌 _______ 踊りも上手だ。",
+        options: ["だけでなく", "ばかりでなく", "のみならず", "しかない"],
+        correctIndex: 0,
+      },
+      {
+        question: "この薬を飲め _______ 治る。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ 誰も知らない。",
+        options: ["以外", "以外に", "以外は", "以外の"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ どう思いますか。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "grammar",
+    testNumber: 8,
+    questions: [
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ 考えている。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "grammar",
+    testNumber: 9,
+    questions: [
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題 _______ 考えている。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 3,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 2,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "grammar",
+    testNumber: 10,
+    questions: [
+      {
+        question: "この問題 _______ どう思いますか。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 3,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 2,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ 考えている。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
     level: "N1",
     section: "vocabulary",
     testNumber: 1,
@@ -3784,6 +5494,291 @@ export const jlptTests: JLPTTestDefinition[] = [
           "この選手は _______ が足りないので、いつも最後に負けてしまう。",
         options: ["はげみ", "はずみ", "ねばり", "むすび"],
         correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "vocabulary",
+    testNumber: 6,
+    questions: [
+      {
+        question: "彼の _______ な態度に、周囲は困惑した。",
+        options: ["曖昧", "明確", "的確", "適切"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は画期的な成果を上げた。",
+        options: ["施策", "処方", "処分", "処置"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を欠いた判断は避けるべきだ。",
+        options: ["客観性", "主観", "観点", "観察"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は高く評価されている。",
+        options: ["実績", "実力", "実現", "実践"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は慎重に検討する必要がある。",
+        options: ["案件", "案内", "案外", "案内"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を重んじる組織文化だ。",
+        options: ["透明性", "透過", "透視", "透明"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ に優れている。",
+        options: ["交渉力", "交際", "交流", "交差"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は効果が期待できる。",
+        options: ["方策", "方法", "方針", "方向"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を欠いた対応だった。",
+        options: ["一貫性", "一括", "一気", "一瞬"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だった。",
+        options: ["指摘", "指示", "指名", "指導"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "vocabulary",
+    testNumber: 7,
+    questions: [
+      {
+        question: "この _______ は革新的だ。",
+        options: ["手法", "手段", "手順", "手続"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を図ることが急務だ。",
+        options: ["効率化", "効力", "効果", "効用"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は鋭い。",
+        options: ["洞察力", "洞察", "洞窟", "洞察的"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は妥当だ。",
+        options: ["見解", "見方", "見地", "見当"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を尊重する姿勢が大切だ。",
+        options: ["多様性", "多量", "多数", "多岐"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は立派だ。",
+        options: ["人格", "人物", "人柄", "人性"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は明確だ。",
+        options: ["目的", "目標", "目安", "目印"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を守ることが重要だ。",
+        options: ["原則", "原理", "原意", "原本"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は素晴らしい。",
+        options: ["業績", "業務", "業界", "業種"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は複雑だ。",
+        options: ["状況", "状態", "場合", "様子"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "vocabulary",
+    testNumber: 8,
+    questions: [
+      {
+        question: "_______ を凝らして検討した。",
+        options: ["知恵", "知識", "知見", "知性"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["分析", "分解", "分類", "分配"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は不可欠だ。",
+        options: ["要素", "要因", "要点", "要領"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を深めることが大切だ。",
+        options: ["理解", "了解", "了承", "了見"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が豊かだ。",
+        options: ["経験", "経過", "経歴", "経由"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は適切だ。",
+        options: ["評価", "評判", "批評", "評論"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を欠かさない姿勢が大切だ。",
+        options: ["努力", "労力", "尽力", "勢力"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は優れている。",
+        options: ["適応力", "適正", "適切", "適当"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は画期的だ。",
+        options: ["試み", "試行", "試練", "試作"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を尊重する。",
+        options: ["自主性", "自由", "自発", "自然"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "vocabulary",
+    testNumber: 9,
+    questions: [
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["助言", "助力", "助成", "助長"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は不可欠だ。",
+        options: ["協力", "協調", "協定", "協会"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を図ることが重要だ。",
+        options: ["最適化", "最大", "最小", "最終"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が高い。",
+        options: ["創造力", "創造", "創意", "創設"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は妥当だ。",
+        options: ["結論", "決論", "結末", "決着"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を重んじる。",
+        options: ["信頼", "信用", "信念", "信仰"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は優れている。",
+        options: ["交渉力", "交際", "交流", "交差"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は効果的だ。",
+        options: ["改善", "改修", "改正", "改革"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を広げることが大切だ。",
+        options: ["視野", "視点", "視力", "視界"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が鋭い。",
+        options: ["観察力", "観察", "観測", "観点"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "vocabulary",
+    testNumber: 10,
+    questions: [
+      {
+        question: "この _______ は明確だ。",
+        options: ["方針", "方向", "方法", "方式"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を重ねることが成功の鍵だ。",
+        options: ["努力", "労力", "尽力", "勢力"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["指摘", "指示", "指名", "指導"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は重要だ。",
+        options: ["観点", "観察", "観測", "観光"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を高めることが課題だ。",
+        options: ["生産性", "生活", "生命", "生計"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だ。",
+        options: ["判断", "判定", "批判", "批評"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は効果的だ。",
+        options: ["対策", "対応", "対処", "対抗"],
+        correctIndex: 0,
+      },
+      {
+        question: "_______ を重視する。",
+        options: ["品質", "品格", "品位", "品目"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は _______ が鋭い。",
+        options: ["直感", "直観", "直接", "直線"],
+        correctIndex: 0,
+      },
+      {
+        question: "この _______ は妥当だ。",
+        options: ["結論", "決論", "結末", "決着"],
+        correctIndex: 0,
       },
     ],
   },
@@ -4173,6 +6168,291 @@ export const jlptTests: JLPTTestDefinition[] = [
       },
     ],
   },
+  {
+    level: "N1",
+    section: "grammar",
+    testNumber: 6,
+    questions: [
+      {
+        question: "彼 _______ この問題は解決できない。",
+        options: ["なくしては", "なしには", "なくては", "ないでは"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼女の説明 _______ 、事態は深刻らしい。",
+        options: ["によれば", "によって", "について", "に対して"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は約束 _______ 行動する人だ。",
+        options: ["をしたら", "したら", "すると", "をすると"],
+        correctIndex: 1,
+      },
+      {
+        question: "この _______ は避けられない。",
+        options: ["結果", "結末", "結論", "決着"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼の _______ は的確だった。",
+        options: ["指摘", "指示", "指名", "指導"],
+        correctIndex: 0,
+      },
+      {
+        question: "会議は来週 _______ 延期された。",
+        options: ["に", "まで", "までに", "から"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼の話 _______ 、彼は成功したそうだ。",
+        options: ["によると", "によって", "について", "に対して"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題は難し _______ 、時間がかかる。",
+        options: ["くて", "いので", "いから", "くてに"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は医者 _______ 働いている。",
+        options: ["として", "にとって", "に対して", "について"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女は泣き _______ 話した。",
+        options: ["ながら", "ながらに", "つつ", "つつも"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "grammar",
+    testNumber: 7,
+    questions: [
+      {
+        question: "この本は読む _______ おもしろい。",
+        options: ["と", "ば", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ 言えば、みんな納得する。",
+        options: ["が", "は", "なら", "では"],
+        correctIndex: 2,
+      },
+      {
+        question: "会議は来週 _______ 延期された。",
+        options: ["に", "まで", "までに", "から"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼の話 _______ 、彼は成功したそうだ。",
+        options: ["によると", "によって", "について", "に対して"],
+        correctIndex: 0,
+      },
+      {
+        question: "この仕事は経験 _______ やったほうがいい。",
+        options: ["があると", "があれば", "があるなら", "があるから"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は約束 _______ 来なかった。",
+        options: ["をしたのに", "したのに", "のに", "をのに"],
+        correctIndex: 1,
+      },
+      {
+        question: "雨 _______ 試合は中止になった。",
+        options: ["なので", "のため", "だから", "なのでに"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女は歌 _______ 踊りも上手だ。",
+        options: ["だけでなく", "ばかりでなく", "のみならず", "しかない"],
+        correctIndex: 0,
+      },
+      {
+        question: "この薬を飲め _______ 治る。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ 誰も知らない。",
+        options: ["以外", "以外に", "以外は", "以外の"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "grammar",
+    testNumber: 8,
+    questions: [
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ どう思いますか。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題 _______ 考えている。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "grammar",
+    testNumber: 9,
+    questions: [
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 2,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ 考えている。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 3,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 0,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "grammar",
+    testNumber: 10,
+    questions: [
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 2,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 1,
+      },
+      {
+        question: "この問題 _______ どう思いますか。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は走り _______ 来た。",
+        options: ["ながら", "つつ", "ながらに", "つつも"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼女 _______ この仕事はできない。",
+        options: ["なしでは", "なしに", "なくて", "ないで"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼は来る _______ 待っていた。",
+        options: ["まで", "までに", "うちに", "あいだ"],
+        correctIndex: 2,
+      },
+      {
+        question: "この本は読め _______ 読むほどおもしろい。",
+        options: ["ば", "と", "たら", "なら"],
+        correctIndex: 0,
+      },
+      {
+        question: "彼 _______ この問題は解けない。",
+        options: ["以外に", "以外は", "以外の", "以外で"],
+        correctIndex: 1,
+      },
+      {
+        question: "彼は来る _______ 言っていた。",
+        options: ["と", "って", "ように", "そうに"],
+        correctIndex: 0,
+      },
+      {
+        question: "この問題 _______ 考えている。",
+        options: ["について", "に対して", "によって", "にとって"],
+        correctIndex: 3,
+      },
+    ],
+  },
   // N5 Reading Tests
   {
     level: "N5",
@@ -4473,6 +6753,266 @@ export const jlptTests: JLPTTestDefinition[] = [
           "外国でギタ－をおしえています。",
         ],
         correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N5",
+    section: "reading",
+    testNumber: 6,
+    questions: [
+      {
+        passage:
+          "たなかさんへ\nあしたのパーティーは何時からですか。わたしは５時まで仕事があります。仕事がおわってから行きます。",
+        question: "この人はいつパーティーに行きますか。",
+        options: [
+          "５時まえに行きます。",
+          "５時ごろ行きます。",
+          "５時すぎに行きます。",
+          "仕事を休んで行きます。",
+        ],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "きょうしつに「しずかに」と書いてあります。",
+        question: "何をしなければなりませんか。",
+        options: [
+          "大きい声で話します。",
+          "静かにします。",
+          "走ります。",
+          "歌います。",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この店は月曜日が休みです。火曜日から日曜日まであいています。",
+        question: "土曜日にこの店で買い物ができますか。",
+        options: [
+          "いいえ、できません。",
+          "はい、できます。",
+          "月曜日だけできます。",
+          "日曜日だけできません。",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "山田さんは毎朝７時に起きます。それから顔をあらって、朝ごはんを食べます。８時に家を出ます。",
+        question: "山田さんは何時に家を出ますか。",
+        options: ["７時", "７時半", "８時", "８時半"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "この電車は東京駅で止まりません。次の駅まで行きます。",
+        question: "東京駅で何をしますか。",
+        options: [
+          "電車に乗ります。",
+          "電車を降りません。",
+          "電車が止まります。",
+          "次の駅で降ります。",
+        ],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N5",
+    section: "reading",
+    testNumber: 7,
+    questions: [
+      {
+        passage:
+          "わたしのうちには犬がいます。名前はポチです。毎日わたしと散歩します。",
+        question: "ポチは何ですか。",
+        options: ["猫", "犬", "鳥", "魚"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "日曜日は図書館が休みです。本を借りたい人は土曜日までに来てください。",
+        question: "いつ図書館で本が借りられますか。",
+        options: [
+          "日曜日だけ",
+          "土曜日だけ",
+          "日曜日以外",
+          "土曜日以外",
+        ],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "ここで写真を撮らないでください。",
+        question: "ここで何をしてはいけませんか。",
+        options: ["写真を見ること", "写真を撮ること", "写真を買うこと", "写真を送ること"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "会議は３時からです。２時５０分に会議室に集まってください。",
+        question: "何時に会議室に来ますか。",
+        options: ["２時", "２時５０分", "３時", "３時５０分"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "このバスは空港へ行きません。空港へ行くバスはあちらの停留所から出ます。",
+        question: "空港へ行くバスはどこにありますか。",
+        options: [
+          "ここ",
+          "あちらの停留所",
+          "空港",
+          "このバス",
+        ],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N5",
+    section: "reading",
+    testNumber: 8,
+    questions: [
+      {
+        passage:
+          "新しい本がたくさん入りました。借りたい人はカードを持って来てください。",
+        question: "本を借りるとき、何が必要ですか。",
+        options: ["お金", "カード", "かばん", "ペン"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "明日は雨が降るでしょう。傘を持って出かけてください。",
+        question: "明日何を持って出かけますか。",
+        options: ["かばん", "傘", "帽子", "眼鏡"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この道をまっすぐ行って、右に曲がってください。銀行が見えます。",
+        question: "銀行はどこにありますか。",
+        options: [
+          "左に曲がったところ",
+          "右に曲がったところ",
+          "まっすぐ行ったところ",
+          "曲がらないところ",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "会議の時間が変わりました。１０時から１２時までになりました。",
+        question: "会議は何時から何時までですか。",
+        options: ["９時から１１時", "１０時から１２時", "１１時から１時", "１２時から２時"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "ここに名前と住所を書いてください。電話番号は書かなくてもいいです。",
+        question: "何を書かなければなりませんか。",
+        options: [
+          "名前だけ",
+          "住所だけ",
+          "名前と住所",
+          "電話番号",
+        ],
+        correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N5",
+    section: "reading",
+    testNumber: 9,
+    questions: [
+      {
+        passage:
+          "食堂は２階にあります。エレベーターで行けます。",
+        question: "食堂はどこにありますか。",
+        options: ["１階", "２階", "３階", "地下"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この薬は食事の後に飲んでください。一日三回です。",
+        question: "薬はいつ飲みますか。",
+        options: [
+          "食事の前",
+          "食事の後",
+          "一日一回",
+          "寝る前だけ",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "申し込みは今週の金曜日までです。遅れないでください。",
+        question: "いつまで申し込みができますか。",
+        options: ["木曜日", "金曜日", "土曜日", "日曜日"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "今日は暑いです。冷たい飲み物を飲みましょう。",
+        question: "今日どんな飲み物がいいですか。",
+        options: ["熱い", "温かい", "冷たい", "涼しい"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "この部屋ではたばこを吸わないでください。外で吸ってください。",
+        question: "たばこはどこで吸えますか。",
+        options: ["この部屋", "どこでも", "外", "窓のそば"],
+        correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N5",
+    section: "reading",
+    testNumber: 10,
+    questions: [
+      {
+        passage:
+          "来週の月曜日は祝日で休みです。火曜日から仕事があります。",
+        question: "来週月曜日は何をしますか。",
+        options: ["仕事", "休み", "学校", "会議"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "このボタンを押すと、ドアが開きます。",
+        question: "ドアを開けるにはどうしますか。",
+        options: ["引く", "押す", "回す", "閉める"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "会議室は予約が必要です。前の日に予約してください。",
+        question: "会議室を使うにはいつ予約しますか。",
+        options: [
+          "使う日",
+          "前の日",
+          "次の日",
+          "一週間前",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この機械は壊れています。使わないでください。",
+        question: "この機械を使いますか。",
+        options: ["はい、使います", "いいえ、使いません", "修理してから使います", "わかりません"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "急いでいます。早く食べてください。",
+        question: "どうして早く食べますか。",
+        options: ["おいしいから", "急いでいるから", "たくさんあるから", "熱いから"],
+        correctIndex: 1,
       },
     ],
   },
@@ -4883,6 +7423,236 @@ export const jlptTests: JLPTTestDefinition[] = [
     ],
   },
   {
+    level: "N4",
+    section: "reading",
+    testNumber: 6,
+    questions: [
+      {
+        passage:
+          "来週の水曜日、会議室を使いたい人は事務所に申し込んでください。先に申し込んだ人が使えます。",
+        question: "会議室はどうしたら使えますか。",
+        options: [
+          "水曜日に事務所に行く。",
+          "先に申し込む。",
+          "会議室の前で待つ。",
+          "誰かに聞く。",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この薬は食後に飲んでください。一日二回、朝と晩です。水で飲んでください。",
+        question: "薬はいつ飲みますか。",
+        options: ["食事の前", "食事の後", "朝だけ", "晩だけ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "図書館の本は二週間借りられます。長く借りたい人は、もう一度申し込んでください。",
+        question: "本を三週間借りたいとき、どうしますか。",
+        options: [
+          "借りない。",
+          "もう一度申し込む。",
+          "お金を払う。",
+          "新しい本を借りる。",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "明日の会議は午後三時からです。資料は前の日に渡します。読んでから来てください。",
+        question: "資料はいつ読みますか。",
+        options: ["会議の後", "会議の前の日", "会議の日", "会議の後"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この店は毎週火曜日が休みです。祝日が火曜日のときは水曜日が休みになります。",
+        question: "火曜日が祝日のとき、いつ休みですか。",
+        options: ["火曜日", "水曜日", "両方", "休みではない"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "reading",
+    testNumber: 7,
+    questions: [
+      {
+        passage:
+          "申し込みは今月の末までです。遅れた場合は受け付けません。",
+        question: "今月の末の翌日に申し込めますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この機械はボタンを押すと動きます。止めるときはもう一度同じボタンを押してください。",
+        question: "機械を止めるにはどうしますか。",
+        options: ["別のボタンを押す", "同じボタンを押す", "引く", "待つ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "会議は三時から始まります。二時五十分に会議室に集まってください。",
+        question: "何時に会議室に来ますか。",
+        options: ["二時", "二時五十分", "三時", "三時十分"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "ここで写真を撮ってはいけません。撮りたい人は受付で許可をもらってください。",
+        question: "写真を撮りたいとき、どうしますか。",
+        options: ["撮らない", "受付で許可をもらう", "どこでも撮る", "後で撮る"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "新しい本が入りました。借りたい人はカードを持って来てください。",
+        question: "本を借りるとき、何が必要ですか。",
+        options: ["お金", "カード", "かばん", "ペン"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "reading",
+    testNumber: 8,
+    questions: [
+      {
+        passage:
+          "明日は雨が降るでしょう。傘を持って出かけてください。",
+        question: "明日何を持って出かけますか。",
+        options: ["かばん", "傘", "帽子", "眼鏡"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この道をまっすぐ行って、二つ目の角を左に曲がってください。銀行が見えます。",
+        question: "銀行はどこにありますか。",
+        options: [
+          "一つ目の角を曲がったところ",
+          "二つ目の角を左に曲がったところ",
+          "まっすぐ行ったところ",
+          "右に曲がったところ",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "会議の時間が変わりました。十時から十二時までになりました。",
+        question: "会議は何時から何時までですか。",
+        options: ["九時から十一時", "十時から十二時", "十一時から一時", "十二時から二時"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "ここに名前と住所を書いてください。電話番号は書かなくてもいいです。",
+        question: "何を書かなければなりませんか。",
+        options: ["名前だけ", "住所だけ", "名前と住所", "電話番号"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "食堂は二階にあります。エレベーターで行けます。",
+        question: "食堂はどこにありますか。",
+        options: ["一階", "二階", "三階", "地下"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "reading",
+    testNumber: 9,
+    questions: [
+      {
+        passage:
+          "この薬は食事の後に飲んでください。一日三回です。",
+        question: "薬はいつ飲みますか。",
+        options: ["食事の前", "食事の後", "一日一回", "寝る前だけ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "申し込みは今週の金曜日までです。遅れないでください。",
+        question: "いつまで申し込みができますか。",
+        options: ["木曜日", "金曜日", "土曜日", "日曜日"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "今日は暑いです。冷たい飲み物を飲みましょう。",
+        question: "今日どんな飲み物がいいですか。",
+        options: ["熱い", "温かい", "冷たい", "涼しい"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "この部屋ではたばこを吸わないでください。外で吸ってください。",
+        question: "たばこはどこで吸えますか。",
+        options: ["この部屋", "どこでも", "外", "窓のそば"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "来週の月曜日は祝日で休みです。火曜日から仕事があります。",
+        question: "来週月曜日は何をしますか。",
+        options: ["仕事", "休み", "学校", "会議"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N4",
+    section: "reading",
+    testNumber: 10,
+    questions: [
+      {
+        passage:
+          "このボタンを押すと、ドアが開きます。",
+        question: "ドアを開けるにはどうしますか。",
+        options: ["引く", "押す", "回す", "閉める"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "会議室は予約が必要です。前の日に予約してください。",
+        question: "会議室を使うにはいつ予約しますか。",
+        options: ["使う日", "前の日", "次の日", "一週間前"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この機械は壊れています。使わないでください。",
+        question: "この機械を使いますか。",
+        options: ["はい、使います", "いいえ、使いません", "修理してから使います", "わかりません"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "急いでいます。早く食べてください。",
+        question: "どうして早く食べますか。",
+        options: ["おいしいから", "急いでいるから", "たくさんあるから", "熱いから"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この電車は東京駅で止まりません。次の駅まで行きます。",
+        question: "東京駅で何をしますか。",
+        options: [
+          "電車に乗る。",
+          "電車を降りない。",
+          "電車が止まる。",
+          "次の駅で降りる。",
+        ],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
     level: "N3",
     section: "reading",
     testNumber: 1,
@@ -5192,6 +7962,221 @@ export const jlptTests: JLPTTestDefinition[] = [
           "騙された経験を大きな損失だと考えて受け入れた。",
           "騙されることはお金を取られることだと考えて受け入れた。",
         ],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "reading",
+    testNumber: 6,
+    questions: [
+      {
+        passage:
+          "会議は来週の月曜日に変更になりました。時間は午後二時からです。場所は変わりません。",
+        question: "会議はいつどこでありますか。",
+        options: [
+          "今週月曜日、同じ場所",
+          "来週月曜日、午後二時、同じ場所",
+          "来週火曜日、午後二時",
+          "今週月曜日、午後二時",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この資料は会議の前に読んでおいてください。質問がある人は、事前にメールで送ってください。",
+        question: "質問があるとき、どうしますか。",
+        options: ["会議で聞く", "事前にメールで送る", "読まない", "資料を返す"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "申し込みは今月末までです。必要な書類をそろえて、窓口に提出してください。",
+        question: "申し込みはいつまでですか。",
+        options: ["今週末", "来月末", "今月末", "来週末"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "明日の会議は午前三時からです。資料は前の日に配布します。読んでから参加してください。",
+        question: "資料はいつ読むべきですか。",
+        options: ["会議の後", "会議の前の日", "会議の日", "会議の一週間前"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この機械は赤いボタンを押すと止まります。止めるときは必ず赤いボタンを押してください。",
+        question: "機械を止めるとき、何をしますか。",
+        options: ["青いボタンを押す", "赤いボタンを押す", "待つ", "引く"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "reading",
+    testNumber: 7,
+    questions: [
+      {
+        passage:
+          "新製品の説明会は来週火曜日と水曜日にあります。どちらか都合のいい日に参加してください。",
+        question: "説明会はいつありますか。",
+        options: ["火曜日だけ", "水曜日だけ", "火曜日と水曜日", "今週"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "参加を希望する人は、今週金曜日までに担当者に連絡してください。",
+        question: "参加したいとき、いつ連絡しますか。",
+        options: ["来週", "今週金曜日まで", "説明会の日", "明日"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この薬は食後に飲んでください。一日三回です。水で飲んでください。",
+        question: "薬はいつ飲みますか。",
+        options: ["食事の前", "食事の後", "朝だけ", "晩だけ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "図書館の利用時間は午前九時から午後八時までです。土曜日は午後五時までです。",
+        question: "土曜日は何時まで利用できますか。",
+        options: ["午後八時", "午後五時", "午前九時", "午後九時"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "駐車場は建物の北側にあります。自転車は東側の駐輪場に止めてください。",
+        question: "自転車はどこに止めますか。",
+        options: ["北側", "駐車場", "東側の駐輪場", "建物の中"],
+        correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "reading",
+    testNumber: 8,
+    questions: [
+      {
+        passage:
+          "会議室の予約は前日までにしてください。当日の予約は受け付けません。",
+        question: "当日会議室を予約できますか。",
+        options: ["はい、できます", "いいえ、できません", "午前だけ", "午後だけ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この書類は必ず黒のボールペンで書いてください。鉛筆では書かないでください。",
+        question: "何で書きますか。",
+        options: ["鉛筆", "黒のボールペン", "青のペン", "万年筆"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "提出期限は来週の金曜日です。遅れた場合は受け付けません。",
+        question: "来週の土曜日に提出できますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "研修は三日間です。一日目は講義、二日目は実習、三日目は試験です。",
+        question: "二日目は何をしますか。",
+        options: ["講義", "実習", "試験", "休み"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "欠席する場合は、必ず前日までに連絡してください。当日の連絡は困ります。",
+        question: "欠席するとき、いつ連絡しますか。",
+        options: ["当日", "前日までに", "一週間後", "連絡しない"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "reading",
+    testNumber: 9,
+    questions: [
+      {
+        passage:
+          "このイベントは予約制です。参加したい人は、ウェブサイトから申し込んでください。",
+        question: "どうしたら参加できますか。",
+        options: ["当日行く", "ウェブサイトから申し込む", "電話する", "手紙を送る"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "受付は午前九時から午後五時までです。それ以外の時間は受け付けません。",
+        question: "午後六時に申し込めますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "写真を撮るときは、フラッシュを使わないでください。他のお客様のご迷惑になります。",
+        question: "写真を撮るとき、何をしてはいけませんか。",
+        options: ["撮ること", "フラッシュを使うこと", "カメラを持つこと", "動くこと"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この施設は月曜日が休館日です。祝日が月曜日の場合は火曜日が休館日になります。",
+        question: "月曜日が祝日のとき、いつ休みですか。",
+        options: ["月曜日", "火曜日", "両方", "休みではない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "入館料は大人千円、子供五百円です。団体の場合は割引があります。",
+        question: "大人二人と子供一人ではいくらですか。",
+        options: ["千五百円", "二千円", "二千五百円", "千円"],
+        correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N3",
+    section: "reading",
+    testNumber: 10,
+    questions: [
+      {
+        passage:
+          "応募書類は必ず期限内に送ってください。期限を過ぎたものは審査の対象になりません。",
+        question: "期限を過ぎて送った場合、どうなりますか。",
+        options: ["審査される", "審査の対象にならない", "後で審査される", "連絡が来る"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "面接は三十分程度を予定しています。遅刻しないようにしてください。",
+        question: "面接はどのくらいの時間ですか。",
+        options: ["十五分", "三十分程度", "一時間", "二時間"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この商品は返品できません。ご了承ください。",
+        question: "買った後、返品できますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "お支払いは現金またはカードでお願いします。つり銭のない場合がありますので、できるだけおつりの少ないようにお願いします。",
+        question: "支払い方法は何がありますか。",
+        options: ["現金だけ", "カードだけ", "現金またはカード", "電子マネーだけ"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "この駐車場は三十分まで無料です。それを過ぎると有料になります。",
+        question: "四十分止めたら、どうなりますか。",
+        options: ["無料", "有料", "追い出される", "わからない"],
         correctIndex: 1,
       },
     ],
@@ -5515,6 +8500,226 @@ export const jlptTests: JLPTTestDefinition[] = [
     ],
   },
   {
+    level: "N2",
+    section: "reading",
+    testNumber: 6,
+    questions: [
+      {
+        passage:
+          "会議は来週の火曜日に変更になりました。時間は午後三時からです。場所は会議室Aです。",
+        question: "会議はいつどこでありますか。",
+        options: [
+          "今週火曜日、会議室A",
+          "来週火曜日午後三時、会議室A",
+          "来週水曜日、会議室A",
+          "今週火曜日午後三時",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この資料は会議の前に読んでおいてください。質問がある人は、事前にメールで送ってください。",
+        question: "質問があるとき、どうしますか。",
+        options: ["会議で聞く", "事前にメールで送る", "読まない", "資料を返す"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "申し込みは今月末までです。必要な書類をそろえて、窓口に提出してください。",
+        question: "申し込みはいつまでですか。",
+        options: ["今週末", "来月末", "今月末", "来週末"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "新製品の説明会は来週月曜日と火曜日にあります。どちらか都合のいい日に参加してください。",
+        question: "説明会はいつありますか。",
+        options: ["月曜日だけ", "火曜日だけ", "月曜日と火曜日", "今週"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "参加を希望する人は、今週金曜日までに担当者に連絡してください。",
+        question: "参加したいとき、いつ連絡しますか。",
+        options: ["来週", "今週金曜日まで", "説明会の日", "明日"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "reading",
+    testNumber: 7,
+    questions: [
+      {
+        passage:
+          "この薬は食後に飲んでください。一日三回です。水で飲んでください。",
+        question: "薬はいつ飲みますか。",
+        options: ["食事の前", "食事の後", "朝だけ", "晩だけ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "図書館の利用時間は午前九時から午後八時までです。日曜日は午後五時までです。",
+        question: "日曜日は何時まで利用できますか。",
+        options: ["午後八時", "午後五時", "午前九時", "午後九時"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "駐車場は建物の北側にあります。自転車は東側の駐輪場に止めてください。",
+        question: "自転車はどこに止めますか。",
+        options: ["北側", "駐車場", "東側の駐輪場", "建物の中"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "会議室の予約は前日までにしてください。当日の予約は受け付けません。",
+        question: "当日会議室を予約できますか。",
+        options: ["はい、できます", "いいえ、できません", "午前だけ", "午後だけ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この書類は必ず黒のボールペンで書いてください。鉛筆では書かないでください。",
+        question: "何で書きますか。",
+        options: ["鉛筆", "黒のボールペン", "青のペン", "万年筆"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "reading",
+    testNumber: 8,
+    questions: [
+      {
+        passage:
+          "提出期限は来週の金曜日です。遅れた場合は受け付けません。",
+        question: "来週の土曜日に提出できますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "研修は三日間です。一日目は講義、二日目は実習、三日目は試験です。",
+        question: "二日目は何をしますか。",
+        options: ["講義", "実習", "試験", "休み"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "欠席する場合は、必ず前日までに連絡してください。当日の連絡は困ります。",
+        question: "欠席するとき、いつ連絡しますか。",
+        options: ["当日", "前日までに", "一週間後", "連絡しない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "このイベントは予約制です。参加したい人は、ウェブサイトから申し込んでください。",
+        question: "どうしたら参加できますか。",
+        options: ["当日行く", "ウェブサイトから申し込む", "電話する", "手紙を送る"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "受付は午前九時から午後五時までです。それ以外の時間は受け付けません。",
+        question: "午後六時に申し込めますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "reading",
+    testNumber: 9,
+    questions: [
+      {
+        passage:
+          "写真を撮るときは、フラッシュを使わないでください。他のお客様のご迷惑になります。",
+        question: "写真を撮るとき、何をしてはいけませんか。",
+        options: ["撮ること", "フラッシュを使うこと", "カメラを持つこと", "動くこと"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この施設は月曜日が休館日です。祝日が月曜日の場合は火曜日が休館日になります。",
+        question: "月曜日が祝日のとき、いつ休みですか。",
+        options: ["月曜日", "火曜日", "両方", "休みではない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "入館料は大人千円、子供五百円です。団体の場合は割引があります。",
+        question: "大人二人と子供一人ではいくらですか。",
+        options: ["千五百円", "二千円", "二千五百円", "千円"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "応募書類は必ず期限内に送ってください。期限を過ぎたものは審査の対象になりません。",
+        question: "期限を過ぎて送った場合、どうなりますか。",
+        options: ["審査される", "審査の対象にならない", "後で審査される", "連絡が来る"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "面接は三十分程度を予定しています。遅刻しないようにしてください。",
+        question: "面接はどのくらいの時間ですか。",
+        options: ["十五分", "三十分程度", "一時間", "二時間"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N2",
+    section: "reading",
+    testNumber: 10,
+    questions: [
+      {
+        passage:
+          "この商品は返品できません。ご了承ください。",
+        question: "買った後、返品できますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "お支払いは現金またはカードでお願いします。つり銭のない場合がありますので、できるだけおつりの少ないようにお願いします。",
+        question: "支払い方法は何がありますか。",
+        options: ["現金だけ", "カードだけ", "現金またはカード", "電子マネーだけ"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "この駐車場は三十分まで無料です。それを過ぎると有料になります。",
+        question: "四十分止めたら、どうなりますか。",
+        options: ["無料", "有料", "追い出される", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "会議は来週の水曜日に変更になりました。時間は午後二時からです。場所は変わりません。",
+        question: "会議はいつどこでありますか。",
+        options: [
+          "今週水曜日、同じ場所",
+          "来週水曜日午後二時、同じ場所",
+          "来週木曜日午後二時",
+          "今週水曜日午後二時",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "明日の会議は午後三時からです。資料は前の日に配布します。読んでから参加してください。",
+        question: "資料はいつ読むべきですか。",
+        options: ["会議の後", "会議の前の日", "会議の日", "会議の一週間前"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
     level: "N1",
     section: "reading",
     testNumber: 1,
@@ -5812,6 +9017,226 @@ export const jlptTests: JLPTTestDefinition[] = [
           "不愉快に感じることで誤解が生じる恐れがあるので、はっきり言わないといけない。",
         ],
         correctIndex: 2,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "reading",
+    testNumber: 6,
+    questions: [
+      {
+        passage:
+          "会議は来週の木曜日に変更になりました。時間は午後四時からです。場所は会議室Bです。",
+        question: "会議はいつどこでありますか。",
+        options: [
+          "今週木曜日、会議室B",
+          "来週木曜日午後四時、会議室B",
+          "来週金曜日、会議室B",
+          "今週木曜日午後四時",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この資料は会議の前に読んでおいてください。質問がある人は、事前にメールで送ってください。",
+        question: "質問があるとき、どうしますか。",
+        options: ["会議で聞く", "事前にメールで送る", "読まない", "資料を返す"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "申し込みは今月末までです。必要な書類をそろえて、窓口に提出してください。",
+        question: "申し込みはいつまでですか。",
+        options: ["今週末", "来月末", "今月末", "来週末"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "新製品の説明会は来週水曜日と木曜日にあります。どちらか都合のいい日に参加してください。",
+        question: "説明会はいつありますか。",
+        options: ["水曜日だけ", "木曜日だけ", "水曜日と木曜日", "今週"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "参加を希望する人は、今週土曜日までに担当者に連絡してください。",
+        question: "参加したいとき、いつ連絡しますか。",
+        options: ["来週", "今週土曜日まで", "説明会の日", "明日"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "reading",
+    testNumber: 7,
+    questions: [
+      {
+        passage:
+          "この薬は食後に飲んでください。一日二回、朝と晩です。水で飲んでください。",
+        question: "薬はいつ飲みますか。",
+        options: ["食事の前", "食事の後", "朝だけ", "晩だけ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "図書館の利用時間は午前十時から午後七時までです。土曜日は午後四時までです。",
+        question: "土曜日は何時まで利用できますか。",
+        options: ["午後七時", "午後四時", "午前十時", "午後八時"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "駐車場は建物の南側にあります。自転車は西側の駐輪場に止めてください。",
+        question: "自転車はどこに止めますか。",
+        options: ["南側", "駐車場", "西側の駐輪場", "建物の中"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "会議室の予約は二日前までにしてください。当日の予約は受け付けません。",
+        question: "当日会議室を予約できますか。",
+        options: ["はい、できます", "いいえ、できません", "午前だけ", "午後だけ"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この書類は必ず黒のボールペンで書いてください。消せるペンでは書かないでください。",
+        question: "何で書きますか。",
+        options: ["消せるペン", "黒のボールペン", "青のペン", "万年筆"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "reading",
+    testNumber: 8,
+    questions: [
+      {
+        passage:
+          "提出期限は来週の月曜日です。遅れた場合は受け付けません。",
+        question: "来週の火曜日に提出できますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "研修は四日間です。一日目と二日目は講義、三日目は実習、四日目は試験です。",
+        question: "三日目は何をしますか。",
+        options: ["講義", "実習", "試験", "休み"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "欠席する場合は、必ず二日前までに連絡してください。当日の連絡は困ります。",
+        question: "欠席するとき、いつ連絡しますか。",
+        options: ["当日", "二日前までに", "一週間後", "連絡しない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "このイベントは予約制です。参加したい人は、ウェブサイトから申し込んでください。",
+        question: "どうしたら参加できますか。",
+        options: ["当日行く", "ウェブサイトから申し込む", "電話する", "手紙を送る"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "受付は午前八時から午後六時までです。それ以外の時間は受け付けません。",
+        question: "午後七時に申し込めますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "reading",
+    testNumber: 9,
+    questions: [
+      {
+        passage:
+          "写真を撮るときは、フラッシュを使わないでください。展示物に悪影響があります。",
+        question: "写真を撮るとき、何をしてはいけませんか。",
+        options: ["撮ること", "フラッシュを使うこと", "カメラを持つこと", "動くこと"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "この施設は火曜日が休館日です。祝日が火曜日の場合は水曜日が休館日になります。",
+        question: "火曜日が祝日のとき、いつ休みですか。",
+        options: ["火曜日", "水曜日", "両方", "休みではない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "入館料は大人千二百円、子供六百円です。団体十名以上は二割引です。",
+        question: "大人五人ではいくらですか。",
+        options: ["三千円", "五千円", "六千円", "四千八百円"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "応募書類は必ず期限内に送ってください。期限を過ぎたものは審査の対象になりません。",
+        question: "期限を過ぎて送った場合、どうなりますか。",
+        options: ["審査される", "審査の対象にならない", "後で審査される", "連絡が来る"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "面接は四十五分程度を予定しています。遅刻しないようにしてください。",
+        question: "面接はどのくらいの時間ですか。",
+        options: ["三十分", "四十五分程度", "一時間", "二時間"],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    level: "N1",
+    section: "reading",
+    testNumber: 10,
+    questions: [
+      {
+        passage:
+          "この商品は返品・交換できません。ご了承ください。",
+        question: "買った後、返品できますか。",
+        options: ["はい、できます", "いいえ、できません", "場合による", "わからない"],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "お支払いは現金、カード、電子マネーのいずれかでお願いします。",
+        question: "支払い方法は何がありますか。",
+        options: ["現金だけ", "カードだけ", "現金、カード、電子マネー", "電子マネーだけ"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "この駐車場は一時間まで無料です。それを過ぎると三十分ごとに二百円かかります。",
+        question: "二時間止めたら、いくらかかりますか。",
+        options: ["無料", "二百円", "四百円", "八百円"],
+        correctIndex: 2,
+      },
+      {
+        passage:
+          "会議は来週の金曜日に変更になりました。時間は午前十時からです。場所は変わりません。",
+        question: "会議はいつどこでありますか。",
+        options: [
+          "今週金曜日、同じ場所",
+          "来週金曜日午前十時、同じ場所",
+          "来週土曜日午前十時",
+          "今週金曜日午前十時",
+        ],
+        correctIndex: 1,
+      },
+      {
+        passage:
+          "明日の会議は午後一時からです。資料は前の日にメールで送ります。読んでから参加してください。",
+        question: "資料はいつ読むべきですか。",
+        options: ["会議の後", "会議の前の日", "会議の日", "会議の一週間前"],
+        correctIndex: 1,
       },
     ],
   },

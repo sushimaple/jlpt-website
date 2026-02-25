@@ -42,14 +42,11 @@ export default async function LevelCategoryPage({
     categoryParam.charAt(0).toUpperCase() + categoryParam.slice(1);
 
   return (
-    <section className="space-y-6 max-w-4xl mx-auto">
+    <section className="space-y-6 max-w-4xl mx-auto shadow-2xl p-10 rounded-lg bg-[#CAE9F5]">
       <header className="space-y-2">
         <h2 className="text-3xl font-bold">
           JLPT {levelLabel} {sectionLabel} Tests
         </h2>
-        <p className="text-muted-foreground">
-          Practice {sectionLabel.toLowerCase()} for JLPT {levelLabel}.
-        </p>
       </header>
 
       {tests.length === 0 ? (
@@ -63,15 +60,15 @@ export default async function LevelCategoryPage({
             <a
               key={test._id.toString()}
               href={`/levels/${levelParam}/${categoryParam}/${test._id}`}
-              className="group block rounded-lg border p-6 shadow-lg hover:shadow-md transition-all hover:scale-105 bg-white hover:bg-accent"
+              className="group block rounded-xl border-2 border-[#A8D8E8] p-6 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] bg-white hover:bg-[#CAE9F5]/40 hover:border-[#7EC8E3] font-sans"
             >
-              <p className="text-xs font-medium text-muted-foreground mb-2 uppercase tracking-wide">
+              <p className="text-xs font-semibold text-[#34495E] mb-2 uppercase tracking-widest">
                 Test {i + 1}
               </p>
-              <p className="text-sm text-muted-foreground mb-3">
+              <p className="text-sm font-medium text-[#5D6D7E] mb-3">
                 {test.questions.length} questions
               </p>
-              <p className="font-medium text-primary group-hover:text-primary/90">
+              <p className="font-semibold text-[#2C3E50] group-hover:text-[#1a5276]">
                 Start Practice →
               </p>
             </a>

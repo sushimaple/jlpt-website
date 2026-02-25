@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Reserve space for scrollbar so layout doesn’t shift when navigating between short/long pages */
+html {
+  scrollbar-gutter: stable;
+}
+
 .glass-strong {
   background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
   backdrop-filter: blur(24px);
@@ -7,5 +12,8 @@
 }
 
 body {
-  background: #d2d4dc;
+  background: #ffffff;
+  font-family: sans-serif,;
+  display: flex;
+  flex-direction: column;
 }
