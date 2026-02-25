@@ -141,7 +141,7 @@ export default function TestPage() {
         <h1 className="text-3xl font-bold text-[#2C3E50] tracking-tight">
           {test.title}
         </h1>
-        <p className="text-sm font-medium text-[#5D6D7E] uppercase tracking-wide">
+        <p className="text-2xl text-center font-medium text-[#5D6D7E] uppercase tracking-wide ">
           JLPT {test.level} &middot;{" "}
           {test.section.charAt(0).toUpperCase() + test.section.slice(1)}
         </p>

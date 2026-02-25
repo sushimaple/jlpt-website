@@ -44,7 +44,7 @@ export default async function LevelCategoryPage({
   return (
     <section className="space-y-6 max-w-4xl mx-auto shadow-2xl p-10 rounded-lg bg-[#CAE9F5]">
       <header className="space-y-2">
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-medium text-[#5D6D7E] tracking-wide border-b-2 border-[#A8D8E8] pb-2 text-center">
           JLPT {levelLabel} {sectionLabel} Tests
         </h2>
       </header>
