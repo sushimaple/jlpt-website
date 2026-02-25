@@ -12,8 +12,6 @@ html {
 }
 
 body {
-  background: #ffffff;
-  font-family: sans-serif,;
-  display: flex;
-  flex-direction: column;
+  background: #fff;
+  font-family: sans-serif;
 }

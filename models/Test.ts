@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document, Model } from "mongoose";
+import mongoose, { Document, Model, Schema } from "mongoose";
 
 export type JLPTLevel = "N5" | "N4" | "N3" | "N2" | "N1";
 export type JLPTSection = "vocabulary" | "grammar" | "reading" | "listening";

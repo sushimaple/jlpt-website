@@ -8,9 +8,9 @@ export async function GET() {
       ok: true,
       message: "JLPT tests seeded successfully.",
     });
-  } catch (error) {
-    console.error("Seed failed:", error);
-    const message = error instanceof Error ? error.message : "Seed failed.";
+  } catch (err) {
+    console.error("Seed failed:", err);
+    const message = err instanceof Error ? err.message : "Seed failed.";
     const isAuthError = ["auth", "authentication failed"].some((term) =>
       message.toLowerCase().includes(term),
     );

@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { ArrowBigLeftDash, ArrowLeft, ArrowRight } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import type { TestQuestion } from "@/models/Test";
-import Image from "next/image";
-import { ArrowBigLeftDash, ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 
 interface TestData {
   _id: string;
@@ -67,8 +66,8 @@ export default function TestPage() {
 
   if (!test) {
     return (
-      <div className="text-center p-8">
-        Test not found. Seed DB first: GET /api/seed
+      <div className="p-8 text-center">
+        Test not found. Hit <code>/api/seed</code> to seed the database.
       </div>
     );
   }
@@ -116,34 +115,27 @@ export default function TestPage() {
       router.push(`/levels/${level}/${category}/${testIds[currentIndex + 1]}`);
   };
 
-  const getOptionClassName = (selected: boolean, correct: boolean): string => {
-    const base = `flex items-center p-3 rounded-lg cursor-pointer hover:bg-muted transition-colors border ${selected ? "scale-102 border-2 border-blue-600 shadow-xl " : "scale-100"}`;
-    if (!submitted) {
-      return (
-        base +
-        (selected
-          ? " bg-white text-primary font-medium"
-          : "")
-      );
-    }
-    if (selected && correct)
-      return base + " bg-green-100 border-green-500 text-green-900 font-medium";
-    if (selected && !correct)
-      return base + " bg-red-200 border-red-500 text-red-900 font-medium";
-    if (correct && !selected)
-      return base + " bg-green-50 border-green-500 text-green-800 font-medium";
+  function optionClass(selected: boolean, correct: boolean) {
+    const base =
+      "flex items-center gap-3 rounded-lg border p-3 transition-colors cursor-pointer hover:bg-muted " +
+      (selected ? "border-2 border-blue-600 bg-white font-medium shadow-md " : "");
+    if (!submitted) return base;
+    if (selected && correct) return base + " bg-green-100 border-green-500 text-green-900";
+    if (selected && !correct) return base + " bg-red-200 border-red-500 text-red-900";
+    if (correct && !selected) return base + " bg-green-50 border-green-500 text-green-800";
     return base + " bg-muted/30";
-  };
+  }
+
+  const sectionLabel = test.section.charAt(0).toUpperCase() + test.section.slice(1);
 
   return (
-    <section className="space-y-6 max-w-4xl mx-auto">
-      <header className="space-y-2 pb-4 border-b-2 border-[#A8D8E8] font-sans">
-        <h1 className="text-3xl font-bold text-[#2C3E50] tracking-tight">
+    <section className="mx-auto max-w-4xl space-y-6">
+      <header className="border-b-2 border-[#A8D8E8] pb-4">
+        <h1 className="text-3xl font-bold tracking-tight text-[#2C3E50]">
           {test.title}
         </h1>
-        <p className="text-2xl text-center font-medium text-[#5D6D7E] uppercase tracking-wide ">
-          JLPT {test.level} &middot;{" "}
-          {test.section.charAt(0).toUpperCase() + test.section.slice(1)}
+        <p className="text-center text-2xl font-medium uppercase tracking-wide text-[#5D6D7E]">
+          JLPT {test.level} · {sectionLabel}
         </p>
       </header>
 
@@ -154,10 +146,11 @@ export default function TestPage() {
           return (
             <div
               key={index}
-              className="p-6 shadow-xl rounded-lg space-y-4 bg-card bg-[#CAE9F5]"
+              className="space-y-4 rounded-lg bg-[#CAE9F5] p-6 shadow-xl"
             >
               {isListening && q.imageUrl && (
-                <div className="flex justify-center mb-4">
+                <div className="mb-4 flex justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={q.imageUrl}
                     alt={`Question ${index + 1}`}
@@ -179,8 +172,8 @@ export default function TestPage() {
                 </div>
               )}
 
-              {q.passage && q.passage.trim() && (
-                <div className="bg-slate-100 p-4 rounded border border-slate-200 dark:border-slate-700 whitespace-pre-wrap text-xl leading-relaxed mb-4">
+              {q.passage?.trim() && (
+                <div className="mb-4 rounded border border-slate-200 bg-slate-100 p-4 text-xl leading-relaxed whitespace-pre-wrap dark:border-slate-700 dark:bg-slate-800">
                   {q.passage}
                 </div>
               )}
@@ -199,7 +192,7 @@ export default function TestPage() {
                   return (
                     <label
                       key={optIndex}
-                      className={getOptionClassName(selected, correct)}
+                      className={optionClass(selected, correct)}
                       onClick={(e) => {
                         if (submitted) return;
                         e.preventDefault();
@@ -228,58 +221,57 @@ export default function TestPage() {
             </div>
           );
         })}
-          <div className="flex items-center justify-center gap-2">
-              <button
-                type="button"
-                onClick={handlePrevTest}
-                disabled={!hasPrev}
-                className="px-4 py-2 bg-gray-200 hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-200 text-gray-800 font-semibold rounded-lg transition-colors text-lg"
-              >
-                <ArrowLeftIcon className="w-6 h-6" />
-              </button>
-              
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <button
+              type="button"
+              onClick={handlePrevTest}
+              disabled={!hasPrev}
+              className="rounded-lg bg-gray-200 px-4 py-2 text-lg font-semibold text-gray-800 transition-colors hover:bg-gray-300 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-gray-200"
+            >
+              <ArrowLeft className="h-6 w-6" />
+            </button>
             {!submitted ? (
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="px-8 py-3 bg-sky-400 hover:bg-sky-500 text-white font-semibold rounded-lg transition-colors text-lg hover:scale-101"
+                className="rounded-lg bg-sky-400 px-8 py-3 text-lg font-semibold text-white transition-colors hover:scale-[1.02] hover:bg-sky-500"
               >
-                Check Answers ({userAnswers.filter((a) => a !== -1).length}/
-                {total} answered)
+                Check answers ({userAnswers.filter((a) => a !== -1).length}/{total} answered)
               </button>
             ) : (
-              <div className="flex justify-center items-center">
-                <div className="flex text-center px-8 py-3 gap-2 rounded-xl shadow-xl border border-sky-200/60 bg-gradient-to-br from-[#CAE9F5] to-sky-100">
+              <div className="flex items-center gap-2 rounded-xl border border-sky-200/60 bg-gradient-to-br from-[#CAE9F5] to-sky-100 px-8 py-3 shadow-xl">
                 <button
-                    onClick={handleRetry}
-                    className="px-6 py-2.5 bg-sky-400 hover:bg-sky-500 text-white font-semibold rounded-lg transition-colors shadow-sm hover:scale-[1.02]"
-                  >
-                    Retry
-                  </button>
-                  <h2 className="text-3xl font-bold text-sky-800 mb-1 self-center">
-                    {score}/{total}
-                  </h2>
-                  
-                </div>
+                  type="button"
+                  onClick={handleRetry}
+                  className="rounded-lg bg-sky-400 px-6 py-2.5 font-semibold text-white shadow-sm transition-colors hover:scale-[1.02] hover:bg-sky-500"
+                >
+                  Retry
+                </button>
+                <span className="text-3xl font-bold text-sky-800">
+                  {score}/{total}
+                </span>
               </div>
             )}
             <button
-                type="button"
-                onClick={handleNextTest}
-                disabled={!hasNext}
-                className="px-4 py-2 bg-gray-200 hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-200 text-gray-800 font-semibold rounded-lg transition-colors text-lg"
-              >
-                <ArrowRightIcon className="w-6 h-6" />
-              </button>
+              type="button"
+              onClick={handleNextTest}
+              disabled={!hasNext}
+              className="rounded-lg bg-gray-200 px-4 py-2 text-lg font-semibold text-gray-800 transition-colors hover:bg-gray-300 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-gray-200"
+            >
+              <ArrowRight className="h-6 w-6" />
+            </button>
           </div>
       </form>
-      <div className="flex justify-center items-center">
-      <button
-        onClick={() => router.push(`/levels/${level}/${category}`)}
-        className="flex items-center justify-center border border-gray-300/60 rounded-lg w-40 h-12 shadow-2xl hover:scale-105 transition-all gap-2 bg-[#f2f2f2]"
-      >
-        <ArrowBigLeftDash />Back to Tests
-      </button>
+
+      <div className="flex justify-center">
+        <button
+          type="button"
+          onClick={() => router.push(`/levels/${level}/${category}`)}
+          className="flex h-12 w-40 items-center justify-center gap-2 rounded-lg border border-gray-300/60 bg-[#f2f2f2] shadow-lg transition-transform hover:scale-105"
+        >
+          <ArrowBigLeftDash className="h-5 w-5" />
+          Back to tests
+        </button>
       </div>
     </section>
   );
