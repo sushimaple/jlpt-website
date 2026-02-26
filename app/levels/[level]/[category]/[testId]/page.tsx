@@ -80,7 +80,6 @@ export default function TestPage() {
         0,
       )
     : 0;
-  const percentage = Math.round((score / total) * 100);
 
   const handleAnswerChange = (qIndex: number, selected: number) => {
     if (submitted) return;
@@ -242,23 +241,20 @@ export default function TestPage() {
               onClick={handleSubmit}
               className="rounded-lg bg-sky-400 px-4 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-lg font-semibold text-white transition-colors hover:scale-[1.02] hover:bg-sky-500 touch-manipulation min-w-0"
             >
-              <span className="">Check answers </span>(
+              <span className="">Check </span>
               {userAnswers.filter((a) => a !== -1).length}/{total}
-              <span className="hidden sm:inline"> answered</span>)
             </button>
           ) : (
-            <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 rounded-xl border border-sky-200/60 bg-gradient-to-br from-[#CAE9F5] to-sky-100 px-4 py-2.5 sm:px-8 sm:py-3 shadow-xl">
-              <button
-                type="button"
-                onClick={handleRetry}
-                className="rounded-lg bg-sky-400 px-4 py-2 sm:px-6 sm:py-2.5 text-sm sm:text-base font-semibold text-white shadow-sm transition-colors hover:scale-[1.02] hover:bg-sky-500 touch-manipulation"
-              >
-                Retry
-              </button>
-              <span className="text-2xl sm:text-3xl font-bold text-sky-800">
+            <button
+              type="button"
+              onClick={handleRetry}
+              className="rounded-lg bg-sky-400 px-4 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-lg font-semibold text-white shadow-sm transition-colors hover:scale-[1.02] hover:bg-sky-500 touch-manipulation"
+            >
+              Retry{" "}
+              <span className="text-sm sm:text-lg">
                 {score}/{total}
               </span>
-            </div>
+            </button>
           )}
           <button
             type="button"
