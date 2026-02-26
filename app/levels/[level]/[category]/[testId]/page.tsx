@@ -118,15 +118,21 @@ export default function TestPage() {
   function optionClass(selected: boolean, correct: boolean) {
     const base =
       "flex items-center gap-3 rounded-lg border p-3 transition-colors cursor-pointer hover:bg-muted " +
-      (selected ? "border-2 border-blue-600 bg-white font-medium shadow-md " : "");
+      (selected
+        ? "border-2 border-blue-600 bg-white font-medium shadow-md "
+        : "");
     if (!submitted) return base;
-    if (selected && correct) return base + " bg-green-100 border-green-500 text-green-900";
-    if (selected && !correct) return base + " bg-red-200 border-red-500 text-red-900";
-    if (correct && !selected) return base + " bg-green-50 border-green-500 text-green-800";
+    if (selected && correct)
+      return base + " bg-green-100 border-green-500 text-green-900";
+    if (selected && !correct)
+      return base + " bg-red-200 border-red-500 text-red-900";
+    if (correct && !selected)
+      return base + " bg-green-50 border-green-500 text-green-800";
     return base + " bg-muted/30";
   }
 
-  const sectionLabel = test.section.charAt(0).toUpperCase() + test.section.slice(1);
+  const sectionLabel =
+    test.section.charAt(0).toUpperCase() + test.section.slice(1);
 
   return (
     <section className="mx-auto max-w-4xl space-y-6">
@@ -154,7 +160,7 @@ export default function TestPage() {
                   <img
                     src={q.imageUrl}
                     alt={`Question ${index + 1}`}
-                    className="max-w-md rounded-lg border shadow-sm"
+                    className="max-w-md rounded-lg border shadow-sm object-fit w-full h-full"
                   />
                 </div>
               )}
@@ -221,46 +227,48 @@ export default function TestPage() {
             </div>
           );
         })}
-          <div className="flex flex-wrap items-center justify-center gap-2">
+        <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
+          <button
+            type="button"
+            onClick={handlePrevTest}
+            disabled={!hasPrev}
+            className="rounded-lg bg-gray-200 px-3 py-2 sm:px-4 sm:py-2 text-base sm:text-lg font-semibold text-gray-800 transition-colors hover:bg-gray-300 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-gray-200 touch-manipulation"
+          >
+            <ArrowLeft className="h-5 w-5 sm:h-6 sm:w-6" />
+          </button>
+          {!submitted ? (
             <button
               type="button"
-              onClick={handlePrevTest}
-              disabled={!hasPrev}
-              className="rounded-lg bg-gray-200 px-4 py-2 text-lg font-semibold text-gray-800 transition-colors hover:bg-gray-300 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-gray-200"
+              onClick={handleSubmit}
+              className="rounded-lg bg-sky-400 px-4 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-lg font-semibold text-white transition-colors hover:scale-[1.02] hover:bg-sky-500 touch-manipulation min-w-0"
             >
-              <ArrowLeft className="h-6 w-6" />
+              <span className="">Check answers </span>(
+              {userAnswers.filter((a) => a !== -1).length}/{total}
+              <span className="hidden sm:inline"> answered</span>)
             </button>
-            {!submitted ? (
+          ) : (
+            <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 rounded-xl border border-sky-200/60 bg-gradient-to-br from-[#CAE9F5] to-sky-100 px-4 py-2.5 sm:px-8 sm:py-3 shadow-xl">
               <button
                 type="button"
-                onClick={handleSubmit}
-                className="rounded-lg bg-sky-400 px-8 py-3 text-lg font-semibold text-white transition-colors hover:scale-[1.02] hover:bg-sky-500"
+                onClick={handleRetry}
+                className="rounded-lg bg-sky-400 px-4 py-2 sm:px-6 sm:py-2.5 text-sm sm:text-base font-semibold text-white shadow-sm transition-colors hover:scale-[1.02] hover:bg-sky-500 touch-manipulation"
               >
-                Check answers ({userAnswers.filter((a) => a !== -1).length}/{total} answered)
+                Retry
               </button>
-            ) : (
-              <div className="flex items-center gap-2 rounded-xl border border-sky-200/60 bg-gradient-to-br from-[#CAE9F5] to-sky-100 px-8 py-3 shadow-xl">
-                <button
-                  type="button"
-                  onClick={handleRetry}
-                  className="rounded-lg bg-sky-400 px-6 py-2.5 font-semibold text-white shadow-sm transition-colors hover:scale-[1.02] hover:bg-sky-500"
-                >
-                  Retry
-                </button>
-                <span className="text-3xl font-bold text-sky-800">
-                  {score}/{total}
-                </span>
-              </div>
-            )}
-            <button
-              type="button"
-              onClick={handleNextTest}
-              disabled={!hasNext}
-              className="rounded-lg bg-gray-200 px-4 py-2 text-lg font-semibold text-gray-800 transition-colors hover:bg-gray-300 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-gray-200"
-            >
-              <ArrowRight className="h-6 w-6" />
-            </button>
-          </div>
+              <span className="text-2xl sm:text-3xl font-bold text-sky-800">
+                {score}/{total}
+              </span>
+            </div>
+          )}
+          <button
+            type="button"
+            onClick={handleNextTest}
+            disabled={!hasNext}
+            className="rounded-lg bg-gray-200 px-3 py-2 sm:px-4 sm:py-2 text-base sm:text-lg font-semibold text-gray-800 transition-colors hover:bg-gray-300 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-gray-200 touch-manipulation"
+          >
+            <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
+          </button>
+        </div>
       </form>
 
       <div className="flex justify-center">
